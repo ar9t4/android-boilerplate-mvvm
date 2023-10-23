@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings">إعدادات</string>
+    <string name="language">لغة</string>
+    <string name="languages">اللغات</string>
+    <string name="please_confirm">يرجى تأكيد</string>
+    <string name="okay">تمام</string>
+    <string name="cancel">يلغي</string>
+    <string name="theme">سمة</string>
+    <string name="dark">داكن</string>
+    <string name="light">خفيفة</string>
+    <string name="system_default">خفيفة</string>
+    <string name="notification">تنبيه</string>
+    <string name="notification_text">احصل على معلومات مفيدة ومفصلة عن جهازك</string>
+    <string name="more">أكثر</string>
+    <string name="feedback">تعليق</string>
+    <string name="privacy_policy">سياسة الخصوصية</string>
+    <string name="share">يشارك</string>
+    <string name="rate_us">قيمنا</string>
+    <string name="more_apps">تطبيقات أكثر</string>
+    <string name="version">إصدار</string>
+    <string name="give_feedback">إعطاء ردود الفعل</string>
+    <string name="how_we_can_improve">كيف يمكننا التحسن؟</string>
+    <string name="improve_design">تحسين التصميم</string>
+    <string name="improve_experience">تحسين التجربة</string>
+    <string name="improve_functionality">تحسين الوظائف</string>
+    <string name="improve_performance">تحسين الأداء</string>
+    <string name="briefly_describe_feedback">صف التعليقات بإيجاز</string>
+    <string name="detailed_feedback">ملاحظات مفصلة:</string>
+    <string name="type_here_">أكتب هنا…</string>
+    <string name="submit_feedback">إرسال ملاحظات</string>
+    <string name="invalid_feedback">ملاحظات غير صحيحة!</string>
+    <string name="no_email_app_installed">لا توجد تطبيقات عميل بريد إلكتروني مثبتة</string>
+    <string name="share_message">مهلا! قم بتنزيل %1$s للحصول على معلومات مفيدة ومفصلة عن جهازك. https://play.google.com/store/apps/details؟id=%2$s</string>
+    <string name="home">گھر</string>
+    <string name="users">صارفین</string>
+    <string name="user_details">صارف کی تفصیلات</string>
+    <string name="error_no_internet_connectivity">لا يوجد اتصال بالإنترنت</string>
+    <string name="error_session_expired">انتهت الجلسة</string>
+    <string name="error_something_went_wrong">هناك خطأ ما</string>
+    <string name="error_request_time_out">طلب مهلة</string>
+    <string name="l_p_not_granted">لم يتم منح إذن الموقع</string>
+    <string name="back">خلف</string>
+    <string name="on">على</string>
+    <string name="off">عن</string>
+    <string name="notifications">إشعارات</string>
+    <string name="more_details">المزيد من التفاصيل</string>
+    <string name="n_p_title">الإذن مطلوب</string>
+    <string name="n_p_message">يحتاج التطبيق إلى إذن الإشعارات لنشر الإشعارات على هذا الجهاز.</string>
+    <string name="n_p_not_granted">لم يتم منح إذن الإخطارات</string>
+    <string name="open_app_settings">افتح إعدادات التطبيق</string>
+</resources>

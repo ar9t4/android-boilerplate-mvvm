@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="key"
+            type="String" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/sl_bg_item"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="@dimen/sdp_19">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_key"
+            style="@style/tv_poppins_medium_13_black_000000_white_FFFFFF"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:minLines="2"
+            android:text="@{key}"
+            android:textColor="@drawable/sl_item_text_color"
+            android:textSize="@dimen/ssp_10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Key" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

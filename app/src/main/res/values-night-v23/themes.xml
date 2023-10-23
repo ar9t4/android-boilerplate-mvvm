@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white_FFFFFF_black_141718</item>
+        <item name="colorPrimaryVariant">@color/white_FFFFFF_black_141718</item>
+        <item name="colorOnPrimary">@color/black_1D1D1D_white_FFFFFF</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/white_FFFFFF_black_141718</item>
+        <item name="colorSecondaryVariant">@color/white_FFFFFF_black_141718</item>
+        <item name="colorOnSecondary">@color/black_1D1D1D_white_FFFFFF</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:statusBarColor">@color/white_FFFFFF_black_141718</item>
+        <item name="android:windowBackground">@color/white_FFFFFF_black_141718</item>
+        <item name="android:navigationBarColor">@color/white_FFFFFF_black_141718</item>
+    </style>
+
+</resources>

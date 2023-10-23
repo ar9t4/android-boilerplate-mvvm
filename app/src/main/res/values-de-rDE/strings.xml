@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings">die Einstellungen</string>
+    <string name="language">Sprache</string>
+    <string name="languages">Sprachen</string>
+    <string name="please_confirm">Bitte bestätigen</string>
+    <string name="okay">okay</string>
+    <string name="cancel">Stornieren</string>
+    <string name="theme">Thema</string>
+    <string name="dark">Dunkel</string>
+    <string name="light">Licht</string>
+    <string name="system_default">Systemfehler</string>
+    <string name="notification">Benachrichtigung</string>
+    <string name="notification_text">Erhalten Sie nützliche und detaillierte Informationen zu Ihrem Gerät</string>
+    <string name="more">Mehr</string>
+    <string name="feedback">Feedback</string>
+    <string name="privacy_policy">Datenschutz-Bestimmungen</string>
+    <string name="share">Teilen</string>
+    <string name="rate_us">Bewerten Sie uns</string>
+    <string name="more_apps">Mehr Apps</string>
+    <string name="version">Ausführung</string>
+    <string name="give_feedback">Feedback geben</string>
+    <string name="how_we_can_improve">Wie können wir uns verbessern?</string>
+    <string name="improve_design">Verbesserung des Designs</string>
+    <string name="improve_experience">Verbesserung der Erfahrung</string>
+    <string name="improve_functionality">Verbesserung der Funktionalität</string>
+    <string name="improve_performance">Verbessernde Leistung</string>
+    <string name="briefly_describe_feedback">Feedback kurz beschreiben</string>
+    <string name="detailed_feedback">Ausführliche Rückmeldung:</string>
+    <string name="type_here_">Geben Sie hier ein…</string>
+    <string name="submit_feedback">Feedback senden</string>
+    <string name="invalid_feedback">Ungültiges Feedback!</string>
+    <string name="no_email_app_installed">Keine E-Mail-Client-Apps installiert</string>
+    <string name="share_message">Hallo! Laden Sie %1$s herunter, um nützliche und detaillierte Informationen zu Ihrem Gerät zu erhalten. https://play.google.com/store/apps/details?id=%2$s</string>
+    <string name="home">Heim</string>
+    <string name="users">Benutzer</string>
+    <string name="user_details">Nutzerdetails</string>
+    <string name="error_no_internet_connectivity">Keine Internetverbindung</string>
+    <string name="error_session_expired">Sitzung abgelaufen</string>
+    <string name="error_something_went_wrong">Etwas ist schief gelaufen</string>
+    <string name="error_request_time_out">Zeitüberschreitung der Anforderung</string>
+    <string name="l_p_not_granted">Standortgenehmigung nicht erteilt</string>
+    <string name="back">Zurück</string>
+    <string name="on">An</string>
+    <string name="off">Aus</string>
+    <string name="notifications">Benachrichtigungen</string>
+    <string name="more_details">Mehr Details</string>
+    <string name="n_p_title">Erlaubnis erforderlich</string>
+    <string name="n_p_message">Die App benötigt die Benachrichtigungsberechtigung, um Benachrichtigungen auf diesem Gerät zu veröffentlichen.</string>
+    <string name="n_p_not_granted">Die Berechtigung für Benachrichtigungen wurde nicht erteilt</string>
+    <string name="open_app_settings">Öffnen Sie die App-Einstellungen</string>
+</resources>

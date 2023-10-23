@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/dest_main"
+        android:icon="@drawable/ic_main_bottom_nav"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/dest_settings"
+        android:icon="@drawable/ic_settings_bottom_nav"
+        android:title="@string/settings" />
+    <item
+        android:id="@+id/dest_feedback"
+        android:icon="@drawable/ic_feedback_bottom_nav"
+        android:title="@string/feedback" />
+    <item
+        android:id="@+id/dest_more"
+        android:icon="@drawable/ic_more_bottom_nav"
+        android:title="@string/more" />
+</menu>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="key"
+            type="String" />
+
+        <variable
+            name="value"
+            type="String" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/sdp_12"
+            android:layout_marginVertical="@dimen/sdp_6"
+            android:background="@drawable/bg_item"
+            android:padding="@dimen/sdp_17">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_key"
+                style="@style/tv_poppins_bold_12_black_1D1D1D_white_FFFFFF"
+                android:layout_width="0dp"
+                android:gravity="start"
+                android:text="@{key}"
+                android:textAlignment="viewStart"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/tv_value"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.4"
+                tools:text="Key" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_value"
+                style="@style/tv_poppins_bold_12_black_1D1D1D_white_FFFFFF"
+                android:layout_width="0dp"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="end"
+                android:text="@{value}"
+                android:textAlignment="viewEnd"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tv_key"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.6"
+                tools:text="Value" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</layout>

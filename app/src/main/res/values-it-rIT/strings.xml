@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings">impostazioni</string>
+    <string name="language">linguaggio</string>
+    <string name="languages">Le lingue</string>
+    <string name="please_confirm">Si prega di confermare</string>
+    <string name="okay">Va bene</string>
+    <string name="cancel">Annulla</string>
+    <string name="theme">Tema</string>
+    <string name="dark">Buio</string>
+    <string name="light">Luce</string>
+    <string name="system_default">Default del sistema</string>
+    <string name="notification">Notifica</string>
+    <string name="notification_text">Ottieni informazioni utili e dettagliate sul tuo dispositivo</string>
+    <string name="more">Di più</string>
+    <string name="feedback">Risposta</string>
+    <string name="privacy_policy">politica sulla riservatezza</string>
+    <string name="share">Condividere</string>
+    <string name="rate_us">Valutaci</string>
+    <string name="more_apps">Più applicazioni</string>
+    <string name="version">Versione</string>
+    <string name="give_feedback">Dare un feedback</string>
+    <string name="how_we_can_improve">Come possiamo migliorare?</string>
+    <string name="improve_design">Migliorare il design</string>
+    <string name="improve_experience">Migliorare l\'esperienza</string>
+    <string name="improve_functionality">Miglioramento della funzionalità</string>
+    <string name="improve_performance">Miglioramento delle prestazioni</string>
+    <string name="briefly_describe_feedback">Descrivi brevemente il feedback</string>
+    <string name="detailed_feedback">Feedback dettagliato:</string>
+    <string name="type_here_">Digitare qui…</string>
+    <string name="submit_feedback">Invia feedback</string>
+    <string name="invalid_feedback">Feedback non valido!</string>
+    <string name="no_email_app_installed">Nessuna app client di posta installata</string>
+    <string name="share_message">Hey! Scarica %1$s per ottenere informazioni utili e dettagliate sul tuo dispositivo. https://play.google.com/store/apps/details?id=%2$s</string>
+    <string name="home">Casa</string>
+    <string name="users">Utenti</string>
+    <string name="user_details">Dettagli utente</string>
+    <string name="error_no_internet_connectivity">Nessuna connettività Internet</string>
+    <string name="error_session_expired">Sessione scaduta</string>
+    <string name="error_something_went_wrong">Qualcosa è andato storto</string>
+    <string name="error_request_time_out">Richiedi timeout</string>
+    <string name="l_p_not_granted">Autorizzazione alla posizione non concessa</string>
+    <string name="back">Indietro</string>
+    <string name="on">SU</string>
+    <string name="off">Spento</string>
+    <string name="notifications">Notifiche</string>
+    <string name="more_details">Più dettagli</string>
+    <string name="n_p_title">Autorizzazione richiesta</string>
+    <string name="n_p_message">L\'app necessita dell\'autorizzazione Notifiche per pubblicare notifiche su questo dispositivo.</string>
+    <string name="n_p_not_granted">Autorizzazione notifiche non concessa</string>
+    <string name="open_app_settings">Apri Impostazioni app</string>
+</resources>

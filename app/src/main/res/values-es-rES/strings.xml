@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings">Ajustes</string>
+    <string name="language">Idioma</string>
+    <string name="languages">Idiomas</string>
+    <string name="please_confirm">Por favor confirmar</string>
+    <string name="okay">Okey</string>
+    <string name="cancel">Cancelar</string>
+    <string name="theme">Tema</string>
+    <string name="dark">Oscuro</string>
+    <string name="light">Ligero</string>
+    <string name="system_default">Sistema por defecto</string>
+    <string name="notification">Notificación</string>
+    <string name="notification_text">Obtenga información útil y detallada sobre su dispositivo</string>
+    <string name="more">Más</string>
+    <string name="feedback">Realimentación</string>
+    <string name="privacy_policy">Política de privacidad</string>
+    <string name="share">Cuota</string>
+    <string name="rate_us">Nos califica</string>
+    <string name="more_apps">Más aplicaciones</string>
+    <string name="version">Versión</string>
+    <string name="give_feedback">Dar opinion</string>
+    <string name="how_we_can_improve">¿Cómo podemos mejorar?</string>
+    <string name="improve_design">Mejorando el diseño</string>
+    <string name="improve_experience">Mejorando la experiencia</string>
+    <string name="improve_functionality">Mejorando la funcionalidad</string>
+    <string name="improve_performance">Mejorando el desempeño</string>
+    <string name="briefly_describe_feedback">Describe brevemente los comentarios</string>
+    <string name="detailed_feedback">Comentarios detallados:</string>
+    <string name="type_here_">Escriba aquí…</string>
+    <string name="submit_feedback">Enviar comentarios</string>
+    <string name="invalid_feedback">¡Comentarios no válidos!</string>
+    <string name="no_email_app_installed">No hay aplicaciones de cliente de correo electrónico instaladas</string>
+    <string name="share_message">¡Oye! Descarga %1$s para obtener información útil y detallada sobre tu dispositivo. https://play.google.com/store/apps/details?id=%2$s</string>
+    <string name="home">Hogar</string>
+    <string name="users">Usuarios</string>
+    <string name="user_details">Detalles de usuario</string>
+    <string name="error_no_internet_connectivity">Sin conectividad a internet</string>
+    <string name="error_session_expired">Sesión expirada</string>
+    <string name="error_something_went_wrong">Algo salió mal</string>
+    <string name="error_request_time_out">Pide tiempo fuera</string>
+    <string name="l_p_not_granted">Permiso de ubicación no concedido</string>
+    <string name="back">Atrás</string>
+    <string name="on">En</string>
+    <string name="off">Apagado</string>
+    <string name="notifications">Notificaciones</string>
+    <string name="more_details">Más detalles</string>
+    <string name="n_p_title">Permiso requerido</string>
+    <string name="n_p_message">La aplicación necesita permiso de notificaciones para publicar notificaciones en este dispositivo.</string>
+    <string name="n_p_not_granted">Permiso de notificaciones no concedido</string>
+    <string name="open_app_settings">Abrir configuración de la aplicación</string>
+</resources>

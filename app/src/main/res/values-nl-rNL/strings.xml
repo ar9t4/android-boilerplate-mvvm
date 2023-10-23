@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings">Instellingen</string>
+    <string name="language">Taal</string>
+    <string name="languages">Talen</string>
+    <string name="please_confirm">Bevestig alstublieft</string>
+    <string name="okay">Oke</string>
+    <string name="cancel">annuleren</string>
+    <string name="theme">Thema</string>
+    <string name="dark">Donker</string>
+    <string name="light">Licht</string>
+    <string name="system_default">Systeemfout</string>
+    <string name="notification">Kennisgeving</string>
+    <string name="notification_text">Krijg nuttige en gedetailleerde informatie over uw apparaat</string>
+    <string name="more">Meer</string>
+    <string name="feedback">Feedback</string>
+    <string name="privacy_policy">Privacybeleid</string>
+    <string name="share">Delen</string>
+    <string name="rate_us">Beoordeel ons</string>
+    <string name="more_apps">Meer apps</string>
+    <string name="version">Versie</string>
+    <string name="give_feedback">Geef feedback</string>
+    <string name="how_we_can_improve">Hoe kunnen we verbeteren?</string>
+    <string name="improve_design">Ontwerp verbeteren</string>
+    <string name="improve_experience">Ervaring verbeteren</string>
+    <string name="improve_functionality">Functionaliteit verbeteren</string>
+    <string name="improve_performance">Prestaties verbeteren</string>
+    <string name="briefly_describe_feedback">Beschrijf kort feedback</string>
+    <string name="detailed_feedback">Gedetailleerde feedback:</string>
+    <string name="type_here_">Typ hier…</string>
+    <string name="submit_feedback">Feedback verzenden</string>
+    <string name="invalid_feedback">Ongeldige feedback!</string>
+    <string name="no_email_app_installed">Geen e-mailclient-apps geïnstalleerd</string>
+    <string name="share_message">Hallo! Download %1$s voor nuttige en gedetailleerde informatie over uw apparaat. https://play.google.com/store/apps/details?id=%2$s</string>
+    <string name="home">Huis</string>
+    <string name="users">Gebruikers</string>
+    <string name="user_details">gebruikersdetails</string>
+    <string name="error_no_internet_connectivity">Geen internetverbinding</string>
+    <string name="error_session_expired">Sessie verlopen</string>
+    <string name="error_something_went_wrong">Er is iets fout gegaan</string>
+    <string name="error_request_time_out">Verzoek time-out</string>
+    <string name="l_p_not_granted">Locatietoestemming niet verleend</string>
+    <string name="back">Rug</string>
+    <string name="on">Op</string>
+    <string name="off">Uit</string>
+    <string name="notifications">Meldingen</string>
+    <string name="more_details">Meer details</string>
+    <string name="n_p_title">Toestemming vereist</string>
+    <string name="n_p_message">App heeft toestemming voor meldingen nodig om meldingen op dit apparaat te plaatsen.</string>
+    <string name="n_p_not_granted">Toestemming voor meldingen niet verleend</string>
+    <string name="open_app_settings">Open App-instellingen</string>
+</resources>

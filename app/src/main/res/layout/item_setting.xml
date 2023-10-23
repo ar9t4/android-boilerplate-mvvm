@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.android.boilerplate.model.data.aide.SettingItem" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_ripple"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingHorizontal="@dimen/sdp_19">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_key"
+            style="@style/tv_poppins_bold_10_black_000000_white_FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sdp_12"
+            android:text="@{item.key}"
+            android:textSize="@dimen/ssp_12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/theme" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_value"
+            style="@style/tv_poppins_bold_10_black_000000_white_FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sdp_5"
+            android:layout_marginBottom="@dimen/sdp_12"
+            android:text="@{item.value}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tv_key"
+            app:layout_constraintTop_toBottomOf="@id/tv_key"
+            tools:text="@string/system_default" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_arrow_right"
+            android:layout_width="@dimen/sdp_28"
+            android:layout_height="@dimen/sdp_28"
+            android:layout_marginVertical="@dimen/sdp_10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_arrow_right" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/gray_E9EEF1_black_2F2F38"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

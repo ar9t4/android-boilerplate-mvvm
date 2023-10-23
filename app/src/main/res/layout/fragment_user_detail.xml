@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="randomUser"
+            type="com.android.boilerplate.model.data.local.database.entities.RandomUser" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:background="@color/white_FFFFFF_black_141718">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ib_back"
+            android:layout_width="@dimen/sdp_20"
+            android:layout_height="@dimen/sdp_20"
+            android:layout_margin="@dimen/sdp_15"
+            android:background="?selectableItemBackgroundBorderless"
+            android:contentDescription="@string/back"
+            android:src="@drawable/ic_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_title"
+            style="@style/tv_poppins_medium_13_black_000000_white_FFFFFF"
+            android:layout_marginStart="@dimen/sdp_9"
+            android:text="@string/user_details"
+            android:textSize="@dimen/ssp_15"
+            app:layout_constraintBottom_toBottomOf="@id/ib_back"
+            app:layout_constraintStart_toEndOf="@id/ib_back"
+            app:layout_constraintTop_toTopOf="@id/ib_back" />
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/sdp_15"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ib_back">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/sdp_15">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="@dimen/sdp_15"
+                    android:background="@color/gray_E9EEF1_black_2F2F38"
+                    app:layout_constraintBottom_toTopOf="@id/tv_more_details"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_picture"
+                    android:layout_width="@dimen/sdp_96"
+                    android:layout_height="@dimen/sdp_96"
+                    android:layout_marginTop="@dimen/sdp_15"
+                    app:circle="@{true}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:placeholder="@{@drawable/ic_user}"
+                    app:url="@{randomUser.picture.large}"
+                    tools:ignore="ImageContrastCheck"
+                    tools:srcCompat="@drawable/ic_user" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_name"
+                    style="@style/tv_poppins_medium_13_black_000000_white_FFFFFF"
+                    android:layout_marginTop="@dimen/sdp_15"
+                    android:text="@{randomUser.name.title + ' ' + randomUser.name.first + ' ' + randomUser.name.last}"
+                    android:textSize="@dimen/ssp_15"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iv_picture"
+                    tools:text="Abdul Rahman" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_more_details"
+                    style="@style/tv_poppins_bold_12_black_000000_white_FFFFFF"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="@dimen/sdp_15"
+                    android:layout_marginTop="@dimen/sdp_30"
+                    android:layout_marginEnd="@dimen/sdp_15"
+                    android:text="@string/more_details"
+                    android:textSize="@dimen/ssp_15"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_email"
+                    android:layout_width="@dimen/sdp_24"
+                    android:layout_height="@dimen/sdp_24"
+                    android:layout_marginTop="@dimen/sdp_15"
+                    app:layout_constraintStart_toStartOf="@id/tv_more_details"
+                    app:layout_constraintTop_toBottomOf="@id/tv_more_details"
+                    app:srcCompat="@drawable/ic_email"
+                    tools:ignore="ImageContrastCheck" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_email"
+                    style="@style/tv_poppins_regular_11_black_1D1D1D_white_FFFFFF"
+                    android:layout_width="0dp"
+                    android:layout_marginHorizontal="@dimen/sdp_13"
+                    android:text="@{randomUser.email}"
+                    android:textSize="@dimen/ssp_12"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_email"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/iv_email"
+                    app:layout_constraintTop_toTopOf="@id/iv_email"
+                    tools:text="test@test.com" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_gender"
+                    android:layout_width="@dimen/sdp_24"
+                    android:layout_height="@dimen/sdp_24"
+                    android:layout_marginTop="@dimen/sdp_15"
+                    app:layout_constraintStart_toStartOf="@id/tv_more_details"
+                    app:layout_constraintTop_toBottomOf="@id/iv_email"
+                    app:srcCompat="@drawable/ic_user"
+                    tools:ignore="ImageContrastCheck" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_gender"
+                    style="@style/tv_poppins_regular_11_black_1D1D1D_white_FFFFFF"
+                    android:layout_width="0dp"
+                    android:layout_marginHorizontal="@dimen/sdp_13"
+                    android:text="@{randomUser.gender}"
+                    android:textSize="@dimen/ssp_12"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_gender"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/iv_gender"
+                    app:layout_constraintTop_toTopOf="@id/iv_gender"
+                    tools:text="Male" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_dob"
+                    android:layout_width="@dimen/sdp_24"
+                    android:layout_height="@dimen/sdp_24"
+                    android:layout_marginTop="@dimen/sdp_15"
+                    app:layout_constraintStart_toStartOf="@id/tv_more_details"
+                    app:layout_constraintTop_toBottomOf="@id/iv_gender"
+                    app:srcCompat="@drawable/ic_calendar"
+                    tools:ignore="ImageContrastCheck" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_dob"
+                    style="@style/tv_poppins_regular_11_black_1D1D1D_white_FFFFFF"
+                    android:layout_width="0dp"
+                    android:layout_marginHorizontal="@dimen/sdp_13"
+                    android:text="@{randomUser.dob.date}"
+                    android:textSize="@dimen/ssp_12"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_dob"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/iv_dob"
+                    app:layout_constraintTop_toTopOf="@id/iv_dob"
+                    tools:text="1995-01-22T00:21:48:429Z" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_location"
+                    android:layout_width="@dimen/sdp_24"
+                    android:layout_height="@dimen/sdp_24"
+                    android:layout_marginTop="@dimen/sdp_15"
+                    app:layout_constraintStart_toStartOf="@id/tv_more_details"
+                    app:layout_constraintTop_toBottomOf="@id/iv_dob"
+                    app:srcCompat="@drawable/ic_location"
+                    tools:ignore="ImageContrastCheck" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_location"
+                    style="@style/tv_poppins_regular_11_black_1D1D1D_white_FFFFFF"
+                    android:layout_width="0dp"
+                    android:layout_marginHorizontal="@dimen/sdp_13"
+                    android:text="@{randomUser.location.country}"
+                    android:textSize="@dimen/ssp_12"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_location"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/iv_location"
+                    app:layout_constraintTop_toTopOf="@id/iv_location"
+                    tools:text="Pakistan" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_mobile_no"
+                    android:layout_width="@dimen/sdp_24"
+                    android:layout_height="@dimen/sdp_24"
+                    android:layout_marginTop="@dimen/sdp_15"
+                    app:layout_constraintStart_toStartOf="@id/tv_more_details"
+                    app:layout_constraintTop_toBottomOf="@id/iv_location"
+                    app:srcCompat="@drawable/ic_mobile"
+                    tools:ignore="ImageContrastCheck" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_mobile_no"
+                    style="@style/tv_poppins_regular_11_black_1D1D1D_white_FFFFFF"
+                    android:layout_width="0dp"
+                    android:layout_marginHorizontal="@dimen/sdp_13"
+                    android:text="@{randomUser.cell}"
+                    android:textSize="@dimen/ssp_12"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_mobile_no"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/iv_mobile_no"
+                    app:layout_constraintTop_toTopOf="@id/iv_mobile_no"
+                    tools:text="123 (456) 789" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

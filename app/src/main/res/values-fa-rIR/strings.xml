@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings">تنظیمات</string>
+    <string name="language">زبان</string>
+    <string name="languages">زبان ها</string>
+    <string name="please_confirm">لطفا تأیید کنید</string>
+    <string name="okay">باشه</string>
+    <string name="cancel">لغو</string>
+    <string name="theme">موضوع</string>
+    <string name="dark">تاریک</string>
+    <string name="light">سبک</string>
+    <string name="system_default">پیش فرض سیستم</string>
+    <string name="notification">اطلاع</string>
+    <string name="notification_text">اطلاعات مفید و مفصلی درباره دستگاه خود دریافت کنید</string>
+    <string name="rate_us">به ما رای دهید</string>
+    <string name="more_apps">برنامه های بیشتر</string>
+    <string name="version">نسخه</string>
+    <string name="give_feedback">بازخورد بدهید</string>
+    <string name="how_we_can_improve">چگونه می توانیم پیشرفت کنیم؟</string>
+    <string name="improve_design">بهبود طراحی</string>
+    <string name="improve_experience">بهبود تجربه</string>
+    <string name="improve_functionality">بهبود عملکرد</string>
+    <string name="improve_performance">بهبود عملکرد</string>
+    <string name="briefly_describe_feedback">بازخورد را به طور خلاصه توصیف کنید</string>
+    <string name="detailed_feedback">بازخورد دقیق:</string>
+    <string name="type_here_">اینجا را تایپ کنید</string>
+    <string name="submit_feedback">بازخورد ارائه دهید</string>
+    <string name="invalid_feedback">بازخورد نامعتبر است!</string>
+    <string name="no_email_app_installed">هیچ برنامه سرویس گیرنده ایمیل نصب نشده است</string>
+    <string name="more">بیشتر</string>
+    <string name="feedback">بازخورد</string>
+    <string name="privacy_policy">سیاست حفظ حریم خصوصی</string>
+    <string name="share">اشتراک گذاری</string>
+    <string name="share_message">سلام %1$s را بارگیری کنید تا اطلاعات مفید و مفصلی درباره دستگاه خود دریافت کنید. https://play.google.com/store/apps/details؟id=%2$s</string>
+    <string name="home">صفحه اصلی</string>
+    <string name="users">کاربران</string>
+    <string name="user_details">مشخصات کاربر</string>
+    <string name="error_no_internet_connectivity">بدون اتصال به اینترنت</string>
+    <string name="error_session_expired">جلسه تمام شده</string>
+    <string name="error_something_went_wrong">مشکلی پیش آمد</string>
+    <string name="error_request_time_out">درخواست مهلت زمانی</string>
+    <string name="l_p_not_granted">مجوز مکان داده نشده است</string>
+    <string name="back">بازگشت</string>
+    <string name="on">بر</string>
+    <string name="off">خاموش</string>
+    <string name="notifications">اطلاعیه</string>
+    <string name="more_details">جزئیات بیشتر</string>
+    <string name="n_p_title">مجوز لازم است</string>
+    <string name="n_p_message">برنامه برای ارسال اعلان‌ها در این دستگاه به مجوز اعلان‌ها نیاز دارد.</string>
+    <string name="n_p_not_granted">مجوز اعلان‌ها داده نشد</string>
+    <string name="open_app_settings">تنظیمات برنامه را باز کنید</string>
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/dest_main">
+
+    <fragment
+        android:id="@+id/dest_main"
+        android:name="com.android.boilerplate.view.user.UsersFragment"
+        android:label="@string/users"
+        tools:layout="@layout/fragment_users">
+        <action
+            android:id="@+id/action_dest_main_to_dest_user_details"
+            app:destination="@id/dest_user_details"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:popExitAnim="@anim/slide_out_from_left" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/dest_user_details"
+        android:name="com.android.boilerplate.view.userdetail.UserDetailFragment"
+        android:label="@string/user_details"
+        tools:layout="@layout/fragment_user_detail">
+        <argument
+            android:name="randomUser"
+            app:argType="com.android.boilerplate.model.data.local.database.entities.RandomUser" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/dest_settings"
+        android:name="com.android.boilerplate.view.settings.SettingsFragment"
+        android:label="@string/settings"
+        tools:layout="@layout/fragment_settings">
+        <action
+            android:id="@+id/action_dest_settings_to_dest_themes"
+            app:destination="@id/dest_themes"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:popExitAnim="@anim/slide_out_from_left" />
+        <action
+            android:id="@+id/action_dest_settings_to_dest_languages"
+            app:destination="@id/dest_languages"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:popExitAnim="@anim/slide_out_from_left" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/dest_themes"
+        android:name="com.android.boilerplate.view.settings.theme.ThemesFragment"
+        android:label="@string/themes"
+        tools:layout="@layout/fragment_themes"/>
+
+    <fragment
+        android:id="@+id/dest_languages"
+        android:name="com.android.boilerplate.view.settings.language.LanguagesFragment"
+        android:label="@string/languages"
+        tools:layout="@layout/fragment_languages" />
+
+    <fragment
+        android:id="@+id/dest_feedback"
+        android:name="com.android.boilerplate.view.feedback.FeedbackFragment"
+        tools:layout="@layout/fragment_feedback" />
+
+    <fragment
+        android:id="@+id/dest_more"
+        android:name="com.android.boilerplate.view.more.MoreFragment"
+        android:label="@string/more"
+        tools:layout="@layout/fragment_more" />
+
+</navigation>

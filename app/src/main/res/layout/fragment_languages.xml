@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:background="@color/white_FFFFFF_black_141718">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ib_back"
+            android:layout_width="@dimen/sdp_20"
+            android:layout_height="@dimen/sdp_20"
+            android:layout_margin="@dimen/sdp_15"
+            android:background="?selectableItemBackgroundBorderless"
+            android:contentDescription="@string/back"
+            android:src="@drawable/ic_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_title"
+            style="@style/tv_poppins_medium_13_black_000000_white_FFFFFF"
+            android:layout_marginStart="@dimen/sdp_9"
+            android:text="@string/languages"
+            android:textSize="@dimen/ssp_15"
+            app:layout_constraintBottom_toBottomOf="@id/ib_back"
+            app:layout_constraintStart_toEndOf="@id/ib_back"
+            app:layout_constraintTop_toTopOf="@id/ib_back" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_languages"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/sdp_15"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ib_back"
+            tools:itemCount="10"
+            tools:listitem="@layout/item_language" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

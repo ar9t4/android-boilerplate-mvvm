@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings">Ayarlar</string>
+    <string name="language">Dil</string>
+    <string name="languages">Diller</string>
+    <string name="please_confirm">Lütfen onaylayın</string>
+    <string name="okay">Tamam</string>
+    <string name="cancel">İptal etmek</string>
+    <string name="theme">Tema</string>
+    <string name="dark">Karanlık</string>
+    <string name="light">Işık</string>
+    <string name="system_default">Sistem varsayılanı</string>
+    <string name="notification">Bildirim</string>
+    <string name="notification_text">Cihazınız hakkında faydalı ve ayrıntılı bilgi alın</string>
+    <string name="more">Daha</string>
+    <string name="feedback">geri bildirim</string>
+    <string name="privacy_policy">Gizlilik Politikası</string>
+    <string name="share">Paylaş</string>
+    <string name="rate_us">Bizi değerlendirin</string>
+    <string name="more_apps">Daha fazla uygulama</string>
+    <string name="version">Sürüm</string>
+    <string name="give_feedback">Geri bildirimde bulunun</string>
+    <string name="how_we_can_improve">Nasıl iyileştirebiliriz?</string>
+    <string name="improve_design">Tasarımın İyileştirilmesi</string>
+    <string name="improve_experience">Deneyimi Geliştirmek</string>
+    <string name="improve_functionality">İşlevselliği Geliştirme</string>
+    <string name="improve_performance">Performansı iyileştirmek</string>
+    <string name="briefly_describe_feedback">Geri bildirimi kısaca açıklayın</string>
+    <string name="detailed_feedback">Ayrıntılı geri bildirim:</string>
+    <string name="type_here_">Buraya yaz…</string>
+    <string name="submit_feedback">Geri Bildirim Gönder</string>
+    <string name="invalid_feedback">Geçersiz Geribildirim!</string>
+    <string name="no_email_app_installed">Yüklü e-posta istemci uygulaması yok</string>
+    <string name="share_message">Hey! Cihazınız hakkında faydalı ve ayrıntılı bilgi almak için %1$s \'i indirin. https://play.google.com/store/apps/details?id=%2$s</string>
+    <string name="home">Ev</string>
+    <string name="users">Kullanıcılar</string>
+    <string name="user_details">Kullanıcı detayları</string>
+    <string name="error_no_internet_connectivity">İnternet bağlantısı yok</string>
+    <string name="error_session_expired">Oturum süresi doldu</string>
+    <string name="error_something_went_wrong">Bir şeyler yanlış gitti</string>
+    <string name="error_request_time_out">İstek zaman aşımına uğradı</string>
+    <string name="l_p_not_granted">Konum izni verilmedi</string>
+    <string name="back">Geri</string>
+    <string name="on">Açık</string>
+    <string name="off">Kapalı</string>
+    <string name="notifications">Bildirimler</string>
+    <string name="more_details">Daha fazla detay</string>
+    <string name="n_p_title">İzin Gerekli</string>
+    <string name="n_p_message">Uygulamanın bu cihazda bildirim yayınlaması için Bildirim İznine ihtiyacı var.</string>
+    <string name="n_p_not_granted">Bildirim izni verilmedi</string>
+    <string name="open_app_settings">Uygulama Ayarlarını Aç</string>
+</resources>

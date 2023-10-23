@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings">Réglages</string>
+    <string name="language">Langue</string>
+    <string name="languages">Langues</string>
+    <string name="please_confirm">Veuillez confirmer</string>
+    <string name="okay">D\'accord</string>
+    <string name="cancel">Annuler</string>
+    <string name="theme">Thème</string>
+    <string name="dark">Foncé</string>
+    <string name="light">Lumière</string>
+    <string name="system_default">Défaut du système</string>
+    <string name="notification">Notification</string>
+    <string name="notification_text">Obtenez des informations utiles et détaillées sur votre appareil</string>
+    <string name="more">Suite</string>
+    <string name="feedback">Retour</string>
+    <string name="privacy_policy">Politique de confidentialité</string>
+    <string name="share">Partager</string>
+    <string name="rate_us">Évaluez nous</string>
+    <string name="more_apps">Plus d\'applications</string>
+    <string name="version">Version</string>
+    <string name="give_feedback">Donnez votre avis</string>
+    <string name="how_we_can_improve">Comment pouvons-nous nous améliorer ?</string>
+    <string name="improve_design">Améliorer la conception</string>
+    <string name="improve_experience">Améliorer l\'expérience</string>
+    <string name="improve_functionality">Amélioration de la fonctionnalité</string>
+    <string name="improve_performance">Améliorer les performances</string>
+    <string name="briefly_describe_feedback">Décrivez brièvement les commentaires</string>
+    <string name="detailed_feedback">Commentaires détaillés :</string>
+    <string name="type_here_">Écrivez ici…</string>
+    <string name="submit_feedback">Soumettre des commentaires</string>
+    <string name="invalid_feedback">Commentaires invalides !</string>
+    <string name="no_email_app_installed">Aucune application cliente de messagerie installée</string>
+    <string name="share_message">Hey! Téléchargez %1$s pour obtenir des informations utiles et détaillées sur votre appareil. https://play.google.com/store/apps/details?id=%2$s</string>
+    <string name="home">Maison</string>
+    <string name="users">Utilisateurs</string>
+    <string name="user_details">Détails de l\'utilisateur</string>
+    <string name="error_no_internet_connectivity">Pas de connexion Internet</string>
+    <string name="error_session_expired">La session a expiré</string>
+    <string name="error_something_went_wrong">Quelque chose s\'est mal passé</string>
+    <string name="error_request_time_out">Délai d\'expiration de la demande</string>
+    <string name="l_p_not_granted">Autorisation de localisation non accordée</string>
+    <string name="back">Dos</string>
+    <string name="on">Sur</string>
+    <string name="off">Désactivé</string>
+    <string name="notifications">Notifications</string>
+    <string name="more_details">Plus de détails</string>
+    <string name="n_p_title">Autorisation requise</string>
+    <string name="n_p_message">L\'application a besoin d\'une autorisation de notifications pour publier des notifications sur cet appareil.</string>
+    <string name="n_p_not_granted">Autorisation de notification non accordée</string>
+    <string name="open_app_settings">Ouvrir les paramètres de l\'application</string>
+</resources>

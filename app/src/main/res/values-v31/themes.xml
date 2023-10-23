@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SplashTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:statusBarColor" >@color/white_FFFFFF_black_141718</item>
+        <item name="android:windowBackground">@color/white_FFFFFF_black_141718</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_logo_inset</item>
+        <item name="android:windowSplashScreenBackground">@color/white_FFFFFF_black_141718</item>
+    </style>
+
+</resources>

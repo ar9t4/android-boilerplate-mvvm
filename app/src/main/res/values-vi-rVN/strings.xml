@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings">Cài đặt</string>
+    <string name="language">Ngôn ngữ</string>
+    <string name="languages">Ngôn ngữ</string>
+    <string name="please_confirm">Vui lòng xác nhận</string>
+    <string name="okay">Được chứ</string>
+    <string name="cancel">Huỷ bỏ</string>
+    <string name="theme">Chủ đề</string>
+    <string name="dark">Tối</string>
+    <string name="light">Ánh sáng</string>
+    <string name="system_default">Mặc định hệ thống</string>
+    <string name="notification">Thông báo</string>
+    <string name="notification_text">Nhận thông tin hữu ích và chi tiết về thiết bị của bạn</string>
+    <string name="more">Hơn</string>
+    <string name="feedback">Phản hồi</string>
+    <string name="privacy_policy">Chính sách bảo mật</string>
+    <string name="share">Chia sẻ</string>
+    <string name="rate_us">Đánh giá chúng tôi</string>
+    <string name="more_apps">Thêm nhiều ứng dụng</string>
+    <string name="version">Phiên bản</string>
+    <string name="give_feedback">Đưa ra phản hồi</string>
+    <string name="how_we_can_improve">Làm thế nào chúng ta có thể cải thiện?</string>
+    <string name="improve_design">Cải tiến thiết kế</string>
+    <string name="improve_experience">Cải thiện kinh nghiệm</string>
+    <string name="improve_functionality">Cải thiện chức năng</string>
+    <string name="improve_performance">Cải thiện hiệu suất</string>
+    <string name="briefly_describe_feedback">Mô tả ngắn gọn phản hồi</string>
+    <string name="detailed_feedback">Phản hồi chi tiết:</string>
+    <string name="type_here_">Nhập ở đây…</string>
+    <string name="submit_feedback">Gửi phản hồi</string>
+    <string name="invalid_feedback">Phản hồi không hợp lệ!</string>
+    <string name="no_email_app_installed">Không có ứng dụng email khách nào được cài đặt</string>
+    <string name="share_message">Chào! Tải xuống %1$s để nhận thông tin hữu ích và chi tiết về thiết bị của bạn. https://play.google.com/store/apps/details?id=%2$s</string>
+    <string name="home">Nhà</string>
+    <string name="users">Người dùng</string>
+    <string name="user_details">Chi tiết người dùng</string>
+    <string name="error_no_internet_connectivity">Không có kết nối internet</string>
+    <string name="error_session_expired">Phiên hết hạn</string>
+    <string name="error_something_went_wrong">Đã xảy ra sự cố</string>
+    <string name="error_request_time_out">Hết thời gian yêu cầu</string>
+    <string name="l_p_not_granted">Quyền vị trí không được cấp</string>
+    <string name="back">Mặt sau</string>
+    <string name="on">TRÊN</string>
+    <string name="off">Tắt</string>
+    <string name="notifications">Thông báo</string>
+    <string name="more_details">Thêm chi tiết</string>
+    <string name="n_p_title">Cần có sự cho phép</string>
+    <string name="n_p_message">Ứng dụng cần có Quyền thông báo để đăng thông báo trên thiết bị này.</string>
+    <string name="n_p_not_granted">Quyền thông báo không được cấp</string>
+    <string name="open_app_settings">Mở cài đặt ứng dụng</string>
+</resources>

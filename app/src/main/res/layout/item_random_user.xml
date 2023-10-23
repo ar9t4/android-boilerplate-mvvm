@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="randomUser"
+            type="com.android.boilerplate.model.data.local.database.entities.RandomUser" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_item"
+        android:clickable="true"
+        android:paddingHorizontal="@dimen/sdp_10"
+        android:paddingVertical="@dimen/sdp_5"
+        android:layout_marginVertical="@dimen/sdp_5"
+        android:layout_marginHorizontal="@dimen/sdp_10"
+        android:focusable="true">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_picture"
+            android:layout_width="@dimen/sdp_50"
+            android:layout_height="@dimen/sdp_50"
+            app:circle="@{true}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:placeholder="@{@drawable/ic_user}"
+            app:url="@{randomUser.picture.medium}"
+            tools:ignore="ImageContrastCheck"
+            tools:srcCompat="@drawable/ic_user" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_name"
+            style="@style/tv_roboto_light_13_black_light_white_dark"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/sdp_13"
+            android:text="@{randomUser.name.title + ' ' + randomUser.name.first + ' ' + randomUser.name.last}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tv_email"
+            app:layout_constraintStart_toEndOf="@id/iv_picture"
+            tools:text="Abdul Rahman" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_email"
+            style="@style/tv_roboto_light_13_black_light_white_dark"
+            android:layout_width="0dp"
+            android:text="@{randomUser.email}"
+            android:textSize="@dimen/ssp_11"
+            app:layout_constraintEnd_toEndOf="@id/tv_name"
+            app:layout_constraintStart_toStartOf="@id/tv_name"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="abdulrahman9t4@gmail.com" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_phone"
+            style="@style/tv_roboto_light_13_black_light_white_dark"
+            android:layout_width="0dp"
+            android:text="@{randomUser.phone}"
+            android:textSize="@dimen/ssp_11"
+            app:layout_constraintEnd_toEndOf="@id/tv_name"
+            app:layout_constraintStart_toStartOf="@id/tv_name"
+            app:layout_constraintTop_toBottomOf="@id/tv_email"
+            tools:text="(713)-284-3890" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

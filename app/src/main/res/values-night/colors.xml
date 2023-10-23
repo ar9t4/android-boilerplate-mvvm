@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white_FFFFFF_black_141718">@color/black_141718</color>
+    <color name="white_FFFFFF_black_000000">@color/black_000000</color>
+
+    <color name="black_000000_white_FFFFFF">@color/white_FFFFFF</color>
+    <color name="black_201E1E_white_FFFFFF">@color/white_FFFFFF</color>
+    <color name="black_1D1D1D_white_FFFFFF">@color/white_FFFFFF</color>
+
+    <color name="gray_E9EEF1_black_1D1D1D">@color/black_1D1D1D</color>
+    <color name="gray_E9EEF1_black_2F2F38">@color/black_2F2F38</color>
+
+</resources>

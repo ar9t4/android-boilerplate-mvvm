@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings">Setări</string>
+    <string name="language">Limba</string>
+    <string name="languages">Limbi</string>
+    <string name="please_confirm">Vă rugăm să confirmați</string>
+    <string name="okay">bine</string>
+    <string name="cancel">Anulare</string>
+    <string name="theme">Temă</string>
+    <string name="dark">Întuneric</string>
+    <string name="light">Ușoară</string>
+    <string name="system_default">Defectiune de sistem</string>
+    <string name="notification">Notificare</string>
+    <string name="notification_text">Obțineți informații utile și detaliate despre dispozitivul dvs.</string>
+    <string name="more">Mai mult</string>
+    <string name="feedback">Părere</string>
+    <string name="privacy_policy">Politica de Confidențialitate</string>
+    <string name="share">Acțiune</string>
+    <string name="rate_us">e evalua</string>
+    <string name="more_apps">Mai multe aplicatii</string>
+    <string name="version">Versiune</string>
+    <string name="give_feedback">Dați feedback</string>
+    <string name="how_we_can_improve">Cum ne putem îmbunătăți?</string>
+    <string name="improve_design">Îmbunătățirea designului</string>
+    <string name="improve_experience">Îmbunătățirea experienței</string>
+    <string name="improve_functionality">Îmbunătățirea funcționalității</string>
+    <string name="improve_performance">Îmbunătățirea performanței</string>
+    <string name="briefly_describe_feedback">Descrieți pe scurt feedbackul</string>
+    <string name="detailed_feedback">Feedback detaliat:</string>
+    <string name="type_here_">Scrie aici…</string>
+    <string name="submit_feedback">Trimite parerea ta</string>
+    <string name="invalid_feedback">Feedback nevalid!</string>
+    <string name="no_email_app_installed">Nu există aplicații client de e-mail instalate</string>
+    <string name="share_message">Hei! Descărcați %1$s pentru a obține informații utile și detaliate despre dispozitivul dvs. https://play.google.com/store/apps/details?id=%2$s</string>
+    <string name="home">Acasă</string>
+    <string name="users">Utilizatori</string>
+    <string name="user_details">Detalii utilizator</string>
+    <string name="error_no_internet_connectivity">Fără conexiune la internet</string>
+    <string name="error_session_expired">Sesiunea a expirat</string>
+    <string name="error_something_went_wrong">Ceva n-a mers bine</string>
+    <string name="error_request_time_out">Solicitați timeout</string>
+    <string name="l_p_not_granted">Permisiunea de locație nu a fost acordată</string>
+    <string name="back">Înapoi</string>
+    <string name="on">Pe</string>
+    <string name="off">Oprit</string>
+    <string name="notifications">Notificări</string>
+    <string name="more_details">Mai multe detalii</string>
+    <string name="n_p_title">Permisiune necesară</string>
+    <string name="n_p_message">Aplicația necesită Notificări Permisiune pentru a posta notificări pe acest dispozitiv.</string>
+    <string name="n_p_not_granted">Permisiunea de notificări nu a fost acordată</string>
+    <string name="open_app_settings">Deschideți Setările aplicației</string>
+</resources>

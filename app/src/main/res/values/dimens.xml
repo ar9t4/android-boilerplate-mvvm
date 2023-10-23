@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--ssp equivalent dimen-->
+    <dimen name="ssp_10">@dimen/_10ssp</dimen>
+    <dimen name="ssp_11">@dimen/_11ssp</dimen>
+    <dimen name="ssp_12">@dimen/_12ssp</dimen>
+    <dimen name="ssp_13">@dimen/_13ssp</dimen>
+    <dimen name="ssp_15">@dimen/_15ssp</dimen>
+    <dimen name="ssp_17">@dimen/_17ssp</dimen>
+    <dimen name="ssp_18">@dimen/_18ssp</dimen>
+    <dimen name="ssp_21">@dimen/_21ssp</dimen>
+
+    <!--sdp equivalent dimen-->
+    <dimen name="sdp_4">@dimen/_4sdp</dimen>
+    <dimen name="sdp_5">@dimen/_5sdp</dimen>
+    <dimen name="sdp_6">@dimen/_6sdp</dimen>
+    <dimen name="sdp_7">@dimen/_7sdp</dimen>
+    <dimen name="sdp_8">@dimen/_8sdp</dimen>
+    <dimen name="sdp_9">@dimen/_9sdp</dimen>
+    <dimen name="sdp_10">@dimen/_10sdp</dimen>
+    <dimen name="sdp_12">@dimen/_12sdp</dimen>
+    <dimen name="sdp_13">@dimen/_13sdp</dimen>
+    <dimen name="sdp_15">@dimen/_15sdp</dimen>
+    <dimen name="sdp_16">@dimen/_16sdp</dimen>
+    <dimen name="sdp_17">@dimen/_17sdp</dimen>
+    <dimen name="sdp_18">@dimen/_18sdp</dimen>
+    <dimen name="sdp_19">@dimen/_19sdp</dimen>
+    <dimen name="sdp_20">@dimen/_20sdp</dimen>
+    <dimen name="sdp_21">@dimen/_21sdp</dimen>
+    <dimen name="sdp_22">@dimen/_22sdp</dimen>
+    <dimen name="sdp_24">@dimen/_24sdp</dimen>
+    <dimen name="sdp_26">@dimen/_26sdp</dimen>
+    <dimen name="sdp_27">@dimen/_27sdp</dimen>
+    <dimen name="sdp_28">@dimen/_28sdp</dimen>
+    <dimen name="sdp_30">@dimen/_30sdp</dimen>
+    <dimen name="sdp_31">@dimen/_31sdp</dimen>
+    <dimen name="sdp_32">@dimen/_32sdp</dimen>
+    <dimen name="sdp_40">@dimen/_40sdp</dimen>
+    <dimen name="sdp_50">@dimen/_50sdp</dimen>
+    <dimen name="sdp_96">@dimen/_96sdp</dimen>
+
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black_000000">#000000</color>
+    <color name="black_201E1E">#201E1E</color>
+    <color name="black_1D1D1D">#1D1D1D</color>
+    <color name="black_2F2F38">#2F2F38</color>
+    <color name="black_141718">#141718</color>
+    <color name="black_000000_white_FFFFFF">@color/black_000000</color>
+    <color name="black_1D1D1D_white_FFFFFF">@color/black_1D1D1D</color>
+    <color name="black_201E1E_white_FFFFFF">@color/black_201E1E</color>
+
+    <color name="gray_E9EEF1">#E9EEF1</color>
+    <color name="gray_E9EEF1_black_1D1D1D">@color/gray_E9EEF1</color>
+    <color name="gray_E9EEF1_black_2F2F38">@color/gray_E9EEF1</color>
+
+    <color name="white_FFFFFF">#FFFFFF</color>
+    <color name="white_FFFFFF_black_141718">@color/white_FFFFFF</color>
+    <color name="white_FFFFFF_black_000000">@color/white_FFFFFF</color>
+
+    <color name="green_65C078">#65C078</color>
+
+</resources>

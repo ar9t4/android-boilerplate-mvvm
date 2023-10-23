@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings">การตั้งค่า</string>
+    <string name="language">ภาษา</string>
+    <string name="languages">ภาษา</string>
+    <string name="please_confirm">กรุณายืนยัน</string>
+    <string name="okay">ตกลง</string>
+    <string name="cancel">ยกเลิก</string>
+    <string name="theme">ธีม</string>
+    <string name="dark">มืด</string>
+    <string name="light">เบา</string>
+    <string name="system_default">ค่าเริ่มต้นของระบบ</string>
+    <string name="notification">การแจ้งเตือน</string>
+    <string name="notification_text">รับข้อมูลที่เป็นประโยชน์และรายละเอียดเกี่ยวกับอุปกรณ์ของคุณ</string>
+    <string name="more">มากกว่า</string>
+    <string name="feedback">คำติชม</string>
+    <string name="privacy_policy">นโยบายความเป็นส่วนตัว</string>
+    <string name="share">แบ่งปัน</string>
+    <string name="rate_us">ให้คะแนนเรา</string>
+    <string name="more_apps">แอพเพิ่มเติม</string>
+    <string name="version">เวอร์ชั่น</string>
+    <string name="give_feedback">ให้คำติชม</string>
+    <string name="how_we_can_improve">เราจะปรับปรุงได้อย่างไร ?</string>
+    <string name="improve_design">ปรับปรุงการออกแบบ</string>
+    <string name="improve_experience">ปรับปรุงประสบการณ์</string>
+    <string name="improve_functionality">ปรับปรุงการทำงาน</string>
+    <string name="improve_performance">การปรับปรุงประสิทธิภาพ</string>
+    <string name="briefly_describe_feedback">อธิบายข้อเสนอแนะสั้นๆ</string>
+    <string name="detailed_feedback">ข้อเสนอแนะโดยละเอียด:</string>
+    <string name="type_here_">พิมพ์ที่นี่…</string>
+    <string name="submit_feedback">ส่งข้อเสนอแนะ</string>
+    <string name="invalid_feedback">คำติชมไม่ถูกต้อง!</string>
+    <string name="no_email_app_installed">ไม่ได้ติดตั้งแอปไคลเอนต์อีเมล</string>
+    <string name="share_message">เฮ้! ดาวน์โหลด %1$s เพื่อรับข้อมูลที่เป็นประโยชน์และละเอียดเกี่ยวกับอุปกรณ์ของคุณ https://play.google.com/store/apps/details?id=%2$s</string>
+    <string name="home">บ้าน</string>
+    <string name="users">ผู้ใช้</string>
+    <string name="user_details">รายละเอียดผู้ใช้</string>
+    <string name="error_no_internet_connectivity">ไม่มีการเชื่อมต่ออินเทอร์เน็ต</string>
+    <string name="error_session_expired">เซสชั่นหมดอายุ</string>
+    <string name="error_something_went_wrong">บางอย่างผิดพลาด</string>
+    <string name="error_request_time_out">หมดเวลาการร้องขอ</string>
+    <string name="l_p_not_granted">ไม่ได้รับอนุญาตสถานที่</string>
+    <string name="back">กลับ</string>
+    <string name="on">บน</string>
+    <string name="off">ปิด</string>
+    <string name="notifications">การแจ้งเตือน</string>
+    <string name="more_details">รายละเอียดเพิ่มเติม</string>
+    <string name="n_p_title">ต้องได้รับอนุญาต</string>
+    <string name="n_p_message">แอปต้องได้รับอนุญาตจากการแจ้งเตือนจึงจะโพสต์การแจ้งเตือนบนอุปกรณ์นี้ได้</string>
+    <string name="n_p_not_granted">ไม่ได้รับอนุญาตการแจ้งเตือน</string>
+    <string name="open_app_settings">เปิดการตั้งค่าแอพ</string>
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.android.boilerplate.BuildConfig" />
+
+        <variable
+            name="item"
+            type="com.android.boilerplate.model.data.aide.MoreItem" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_ripple"
+        android:clickable="true"
+        android:focusable="true">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_icon"
+            resId="@{item.icon}"
+            android:layout_width="@dimen/sdp_22"
+            android:layout_height="@dimen/sdp_22"
+            android:layout_marginVertical="@dimen/sdp_10"
+            android:layout_marginStart="@dimen/sdp_19"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/ic_settings" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_name"
+            style="@style/tv_poppins_bold_10_black_000000_white_FFFFFF"
+            android:layout_marginStart="@dimen/sdp_16"
+            android:text="@{item.name}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iv_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/settings" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_title"
+            style="@style/tv_poppins_bold_10_black_000000_white_FFFFFF"
+            android:layout_marginEnd="@dimen/sdp_21"
+            android:text="@{BuildConfig.VERSION_NAME}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="1.0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

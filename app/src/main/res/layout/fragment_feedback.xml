@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="listener"
+            type="com.android.boilerplate.view.feedback.FeedbackFragment" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:background="@color/white_FFFFFF_black_141718">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_feedback"
+            android:layout_width="@dimen/sdp_27"
+            android:layout_height="@dimen/sdp_27"
+            android:layout_marginStart="@dimen/sdp_15"
+            android:layout_marginTop="@dimen/sdp_15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_feedback_bottom_nav"
+            tools:ignore="ImageContrastCheck" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/tv_poppins_medium_21_black_000000_white_FFFFFF"
+            android:layout_marginStart="@dimen/sdp_9"
+            android:text="@string/feedback"
+            app:layout_constraintBottom_toBottomOf="@id/iv_feedback"
+            app:layout_constraintStart_toEndOf="@id/iv_feedback"
+            app:layout_constraintTop_toTopOf="@id/iv_feedback" />
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/sdp_15"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_feedback">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/sdp_15">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_feedback_artwork"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintDimensionRatio="1:0.4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_feedback" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_give_feedback"
+                    style="@style/tv_poppins_bold_12_black_000000_white_FFFFFF"
+                    android:layout_marginTop="@dimen/sdp_20"
+                    android:text="@string/give_feedback"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/ssp_17"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iv_feedback_artwork" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_how_can_we_improve"
+                    style="@style/tv_poppins_bold_10_black_000000_white_FFFFFF"
+                    android:layout_marginTop="@dimen/sdp_4"
+                    android:text="@string/how_we_can_improve"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_give_feedback" />
+
+                <include
+                    android:id="@+id/layout_improve_design"
+                    layout="@layout/item_feedback"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/sdp_15"
+                    android:layout_marginEnd="@dimen/sdp_6"
+                    app:key="@{@string/improve_design}"
+                    app:layout_constraintEnd_toStartOf="@id/layout_improve_experience"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_how_can_we_improve" />
+
+                <include
+                    android:id="@+id/layout_improve_experience"
+                    layout="@layout/item_feedback"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/sdp_6"
+                    app:key="@{@string/improve_experience}"
+                    app:layout_constraintBottom_toBottomOf="@id/layout_improve_design"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/layout_improve_design"
+                    app:layout_constraintTop_toTopOf="@id/layout_improve_design" />
+
+                <include
+                    android:id="@+id/layout_improve_functionality"
+                    layout="@layout/item_feedback"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/sdp_12"
+                    android:layout_marginEnd="@dimen/sdp_6"
+                    app:key="@{@string/improve_functionality}"
+                    app:layout_constraintEnd_toStartOf="@id/layout_improve_performance"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/layout_improve_design" />
+
+                <include
+                    android:id="@+id/layout_improve_performance"
+                    layout="@layout/item_feedback"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/sdp_6"
+                    app:key="@{@string/improve_performance}"
+                    app:layout_constraintBottom_toBottomOf="@id/layout_improve_functionality"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/layout_improve_functionality"
+                    app:layout_constraintTop_toTopOf="@id/layout_improve_functionality" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_describe_feedback"
+                    style="@style/tv_poppins_medium_13_black_000000_white_FFFFFF"
+                    android:layout_width="0dp"
+                    android:layout_marginTop="@dimen/sdp_20"
+                    android:text="@string/briefly_describe_feedback"
+                    android:textSize="@dimen/ssp_10"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/layout_improve_performance"
+                    tools:ignore="TextContrastCheck" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_feedback"
+                    style="@style/et_poppins_medium_10_black_000000_white_FFFFFF"
+                    android:layout_width="0dp"
+                    android:layout_marginTop="@dimen/sdp_6"
+                    android:gravity="start"
+                    android:hint="@string/type_here_"
+                    android:lines="5"
+                    android:padding="@dimen/sdp_12"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_describe_feedback"
+                    tools:ignore="VisualLintTextFieldSize" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_submit_feedback"
+                    style="@style/btn_poppins_medium_12_white_FFFFFF"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/sdp_40"
+                    android:layout_marginTop="@dimen/sdp_20"
+                    android:text="@string/submit_feedback"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/et_feedback"
+                    tools:ignore="VisualLintButtonSize" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

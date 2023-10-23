@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--ViewGroup styles-->
+
+    <!--........-->
+
+    <!--AppCompatTextView styles-->
+    <style name="tv_root" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="tv_roboto_light_13_black_light_white_dark" parent="tv_root">
+        <item name="android:fontFamily">@font/roboto_light</item>
+        <item name="android:textColor">@color/black_201E1E_white_FFFFFF</item>
+        <item name="android:textSize">@dimen/ssp_13</item>
+    </style>
+
+    <style name="tv_poppins_regular_11_black_1D1D1D_white_FFFFFF" parent="tv_root">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textColor">@color/black_1D1D1D_white_FFFFFF</item>
+        <item name="android:textSize">@dimen/ssp_11</item>
+    </style>
+
+    <style name="tv_poppins_medium_13_black_000000_white_FFFFFF" parent="tv_root">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/black_000000_white_FFFFFF</item>
+        <item name="android:textSize">@dimen/ssp_13</item>
+    </style>
+
+    <style name="tv_poppins_medium_21_black_000000_white_FFFFFF" parent="tv_root">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/black_000000_white_FFFFFF</item>
+        <item name="android:textSize">@dimen/ssp_21</item>
+    </style>
+
+    <style name="tv_poppins_bold_10_black_000000_white_FFFFFF" parent="tv_root">
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:textColor">@color/black_000000_white_FFFFFF</item>
+        <item name="android:textSize">@dimen/ssp_10</item>
+    </style>
+
+    <style name="tv_poppins_bold_12_black_000000_white_FFFFFF" parent="tv_root">
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:textColor">@color/black_000000_white_FFFFFF</item>
+        <item name="android:textSize">@dimen/ssp_12</item>
+    </style>
+
+    <style name="tv_poppins_bold_12_black_1D1D1D_white_FFFFFF" parent="tv_root">
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:textColor">@color/black_1D1D1D_white_FFFFFF</item>
+        <item name="android:textSize">@dimen/ssp_12</item>
+    </style>
+
+    <style name="tv_poppins_bold_15_black_1D1D1D_white_FFFFFF" parent="tv_poppins_bold_12_black_1D1D1D_white_FFFFFF">
+        <item name="android:textSize">@dimen/ssp_15</item>
+    </style>
+    <!--........-->
+
+    <!--AppCompatEditText styles-->
+    <style name="et_poppins_medium_10_black_000000_white_FFFFFF" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textColorHint">@color/black_000000_white_FFFFFF</item>
+        <item name="android:textColor">@color/black_000000_white_FFFFFF</item>
+        <item name="android:textSize">@dimen/ssp_10</item>
+        <item name="android:background">@drawable/bg_item</item>
+        <item name="android:textCursorDrawable">@drawable/et_cursor_drawable</item>
+    </style>
+    <!--........-->
+
+    <!--AppCompatButton styles-->
+    <style name="btn_poppins_medium_12_white_FFFFFF" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/white_FFFFFF_black_000000</item>
+        <item name="android:background">@drawable/bg_button</item>
+        <item name="android:textSize">@dimen/ssp_12</item>
+    </style>
+    <!--........-->
+
+    <!--Alert Dialog styles-->
+    <style name="Alert" parent="Theme.MaterialComponents.DayNight.Dialog.Alert">
+        <item name="android:background">@color/gray_E9EEF1_black_1D1D1D</item>
+        <item name="android:textColor">@color/black_1D1D1D_white_FFFFFF</item>
+        <item name="buttonBarNegativeButtonStyle">@style/AlertButton</item>
+        <item name="buttonBarPositiveButtonStyle">@style/AlertButton</item>
+        <item name="buttonBarNeutralButtonStyle">@style/AlertButton</item>
+        <item name="colorAccent">@color/black_1D1D1D_white_FFFFFF</item>
+    </style>
+
+    <style name="AlertButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/black_1D1D1D_white_FFFFFF</item>
+    </style>
+    <!--........-->
+
+    <!--BottomNavigationView styles-->
+    <style name="BottomNavigationView.ActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/gray_E9EEF1_black_2F2F38</item>
+    </style>
+    <!--........-->
+
+</resources>
