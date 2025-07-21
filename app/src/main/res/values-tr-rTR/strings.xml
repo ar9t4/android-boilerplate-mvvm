@@ -49,4 +49,13 @@
     <string name="n_p_message">Uygulamanın bu cihazda bildirim yayınlaması için Bildirim İznine ihtiyacı var.</string>
     <string name="n_p_not_granted">Bildirim izni verilmedi</string>
     <string name="open_app_settings">Uygulama Ayarlarını Aç</string>
+    <string name="themes">Temalar</string>
+    <string name="choose_language">Dil Seçin</string>
+    <string name="choose_theme">Tema Seçin</string>
+    <string name="next">İleri</string>
+    <string name="str_continue">Devam</string>
+    <string name="great">Harika!</string>
+    <string name="you_are_all_set">Tamam, uygulamayı kullanmaya hazırsınız.</string>
+    <string name="language_selection_done">Dil seçimi tamamlandı</string>
+    <string name="theme_selection_done">Tema seçimi tamamlandı</string>
 </resources>

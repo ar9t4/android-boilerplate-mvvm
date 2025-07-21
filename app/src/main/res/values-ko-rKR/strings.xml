@@ -49,4 +49,13 @@
     <string name="n_p_message">앱이 이 기기에 알림을 게시하려면 알림 권한이 필요합니다.</string>
     <string name="n_p_not_granted">알림 권한이 부여되지 않았습니다.</string>
     <string name="open_app_settings">앱 설정 열기</string>
+    <string name="themes">테마</string>
+    <string name="choose_language">언어 선택</string>
+    <string name="choose_theme">테마 선택</string>
+    <string name="next">다음</string>
+    <string name="str_continue">계속</string>
+    <string name="great">좋아요!</string>
+    <string name="you_are_all_set">앱을 사용할 준비가 되었습니다.</string>
+    <string name="language_selection_done">언어 선택이 완료되었습니다.</string>
+    <string name="theme_selection_done">테마 선택이 완료되었습니다.</string>
 </resources>

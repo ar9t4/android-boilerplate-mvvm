@@ -8,8 +8,6 @@ import android.widget.EditText
  * @author Abdul Rahman
  */
 interface BaseView {
-    fun changeStatusBarColor(color: Int)
-    fun resetStatusBarColor()
     fun hideSystemBars(hide: Boolean, window: Window?, view: View?)
     fun setSoftInputMode(mode: Int)
     fun resetSoftInputMode()

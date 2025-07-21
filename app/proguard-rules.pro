@@ -23,3 +23,16 @@
 -keep class com.android.boilerplate.base.model.data.local.BaseModel
 -keep class com.android.boilerplate.base.model.data.remote.request.BaseRequest
 -keep class com.android.boilerplate.base.model.data.remote.response.BaseResponse
+
+-keep class com.android.boilerplate.base.model.data.remote.response.Result { *; }
+
+-keep class com.android.boilerplate.model.data.aide.Language {
+*** id;
+*** lang;
+*** name;
+*** selected;
+}
+
+# https://r8.googlesource.com/r8/+/refs/heads/main/compatibility-faq.md#troubleshooting-gson-gson
+-keep class com.google.gson.reflect.TypeToken { *; }
+-keep class * extends com.google.gson.reflect.TypeToken

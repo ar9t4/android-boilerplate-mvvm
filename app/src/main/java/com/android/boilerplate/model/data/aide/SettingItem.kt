@@ -1,6 +1,6 @@
 package com.android.boilerplate.model.data.aide
 
-import com.android.boilerplate.base.model.data.remote.response.BaseResponse
+import com.android.boilerplate.base.model.data.local.BaseModel
 import com.google.gson.annotations.SerializedName
 
 /**
@@ -14,4 +14,4 @@ data class SettingItem(
     val key: String,
     @SerializedName("value")
     var value: String
-) : BaseResponse()
+) : BaseModel()

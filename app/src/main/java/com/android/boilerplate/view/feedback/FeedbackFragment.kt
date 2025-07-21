@@ -51,25 +51,32 @@ class FeedbackFragment : BaseFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.apply {
+            // find and restore scrollview scroll position
+            savedInstanceState?.let {
+                if (it.containsKey("scroll_y")) {
+                    val scrollY = it.getInt("scroll_y", 0)
+                    scrollView.post { scrollView.scrollTo(0, scrollY) }
+                }
+            }
             layoutImproveDesign.root.setOnClickListener {
                 etFeedback.error = null
                 it.isSelected = !it.isSelected
-                viewModel.improveDesign.value = it.isSelected
+                viewModel.setImproveDesign(it.isSelected)
             }
             layoutImproveExperience.root.setOnClickListener {
                 etFeedback.error = null
                 it.isSelected = !it.isSelected
-                viewModel.improveExperience.value = it.isSelected
+                viewModel.setImproveExperience(it.isSelected)
             }
             layoutImproveFunctionality.root.setOnClickListener {
                 etFeedback.error = null
                 it.isSelected = !it.isSelected
-                viewModel.improveFunctionality.value = it.isSelected
+                viewModel.setImproveFunctionality(it.isSelected)
             }
             layoutImprovePerformance.root.setOnClickListener {
                 etFeedback.error = null
                 it.isSelected = !it.isSelected
-                viewModel.improvePerformance.value = it.isSelected
+                viewModel.setImprovePerformance(it.isSelected)
             }
             etFeedback.addTextChangedListener(object : TextWatcher {
                 override fun beforeTextChanged(s: CharSequence?, start: Int, co: Int, a: Int) {}
@@ -85,6 +92,29 @@ class FeedbackFragment : BaseFragment() {
                 override fun afterTextChanged(s: Editable?) {}
             })
             btnSubmitFeedback.setOnClickListener { onSubmitRatingClicked() }
+        }
+        observeLiveData()
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putInt("scroll_y", binding.scrollView.scrollY)
+    }
+
+    private fun observeLiveData() {
+        binding.apply {
+            viewModel.improveDesign.value?.let {
+                layoutImproveDesign.root.isSelected = it
+            }
+            viewModel.improveExperience.value?.let {
+                layoutImproveExperience.root.isSelected = it
+            }
+            viewModel.improveFunctionality.value?.let {
+                layoutImproveFunctionality.root.isSelected = it
+            }
+            viewModel.improvePerformance.value?.let {
+                layoutImprovePerformance.root.isSelected = it
+            }
         }
     }
 

@@ -51,26 +51,26 @@ class SettingsFragment : BaseFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.apply {
+            val context = requireContext()
             // observers on live data
             viewModel.settingItems.observe(viewLifecycleOwner) {
-                if (it == null) {
-                    // fetch data
-                    viewModel.fetchSettingItems()
-                } else {
+                if (!it.isNullOrEmpty()) {
                     // setup data
                     setup(settingsItems = it)
                 }
             }
             viewModel.themes.observe(viewLifecycleOwner) {
                 it?.let {
-                    viewModel.updateSelectedTheme()
+                    viewModel.updateSelectedTheme(context = context)
                 }
             }
             viewModel.languages.observe(viewLifecycleOwner) {
                 it?.let {
-                    viewModel.updateSelectedLanguage()
+                    viewModel.updateSelectedLanguage(context = context)
                 }
             }
+            // fetch data
+            viewModel.fetchSettingItems(context = context)
         }
     }
 
@@ -88,7 +88,7 @@ class SettingsFragment : BaseFragment() {
                 when (it.id) {
                     1 -> {
                         // toggle notification
-                        viewModel.toggleNotification()
+                        viewModel.toggleNotification(context = requireContext())
                     }
 
                     2 -> {

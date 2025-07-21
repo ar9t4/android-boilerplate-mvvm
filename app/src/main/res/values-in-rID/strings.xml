@@ -49,4 +49,13 @@
     <string name="n_p_message">Aplikasi memerlukan Izin Notifikasi untuk memposting notifikasi di perangkat ini.</string>
     <string name="n_p_not_granted">Izin notifikasi tidak diberikan</string>
     <string name="open_app_settings">Buka Pengaturan Aplikasi</string>
+    <string name="themes">Tema</string>
+    <string name="choose_language">Pilih Bahasa</string>
+    <string name="choose_theme">Pilih Tema</string>
+    <string name="next">Berikutnya</string>
+    <string name="str_continue">Lanjutkan</string>
+    <string name="great">Bagus!</string>
+    <string name="you_are_all_set">Anda sudah siap menggunakan aplikasi.</string>
+    <string name="language_selection_done">Pemilihan bahasa selesai</string>
+    <string name="theme_selection_done">Pemilihan tema selesai</string>
 </resources>

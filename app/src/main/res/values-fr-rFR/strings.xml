@@ -49,4 +49,13 @@
     <string name="n_p_message">L\'application a besoin d\'une autorisation de notifications pour publier des notifications sur cet appareil.</string>
     <string name="n_p_not_granted">Autorisation de notification non accordée</string>
     <string name="open_app_settings">Ouvrir les paramètres de l\'application</string>
+    <string name="themes">Thèmes</string>
+    <string name="choose_language">Choisir la langue</string>
+    <string name="choose_theme">Choisir le thème</string>
+    <string name="next">Suivant</string>
+    <string name="str_continue">Continuer</string>
+    <string name="great">Super !</string>
+    <string name="you_are_all_set">Vous êtes prêt à utiliser l\'application.</string>
+    <string name="language_selection_done">Sélection de la langue terminée</string>
+    <string name="theme_selection_done">Sélection du thème terminée</string>
 </resources>

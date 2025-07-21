@@ -36,6 +36,7 @@
             app:layout_constraintTop_toTopOf="@id/iv_feedback" />
 
         <ScrollView
+            android:id="@+id/scrollView"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginTop="@dimen/sdp_15"

@@ -5,6 +5,7 @@
     <string name="email_address" translatable="false">test@test.com</string>
     <string name="image" translatable="false">-IMG-</string>
     <string name="video" translatable="false">-VID-</string>
+    <string name="english" translatable="false">English</string>
 
     <string name="error_session_expired">Session expired</string>
     <string name="error_no_internet_connectivity">No internet connectivity</string>
@@ -57,5 +58,13 @@
     <string name="n_p_not_granted">Notifications permission not granted</string>
     <string name="open_app_settings">Open App Settings</string>
     <string name="themes">Themes</string>
+    <string name="choose_language">Choose Language</string>
+    <string name="choose_theme">Choose Theme</string>
+    <string name="next">Next</string>
+    <string name="str_continue">Continue</string>
+    <string name="great">Great!</string>
+    <string name="you_are_all_set">You are all set and ready to use the app.</string>
+    <string name="language_selection_done">Language selection is done</string>
+    <string name="theme_selection_done">Theme selection is done</string>
 
 </resources>

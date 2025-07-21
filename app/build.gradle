@@ -76,6 +76,7 @@ android {
 
     buildFeatures {
         dataBinding true
+        buildConfig true
     }
 
     compileOptions {
@@ -84,7 +85,7 @@ android {
     }
 
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = '17'
     }
 
     configurations {
@@ -92,12 +93,17 @@ android {
            //exclude group: 'androidx.lifecycle', module: 'lifecycle-viewmodel', class: 'androidx.lifecycle.ViewModelLazy'
         }
     }
+
+    namespace 'com.android.boilerplate'
 }
 
 dependencies {
     testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
+
+    // activity
+    implementation "androidx.activity:activity-ktx:$rootProject.activityVersion"
 
     // appcompat
     implementation "androidx.appcompat:appcompat:$rootProject.appcompatVersion"
@@ -152,4 +158,7 @@ dependencies {
 
     // google play services: location
     implementation "com.google.android.gms:play-services-location:$rootProject.playServicesLocationVersion"
+
+    // lottie
+    implementation "com.airbnb.android:lottie:$rootProject.lottieVersion"
 }

@@ -55,7 +55,7 @@ class ThemesFragment : BaseFragment() {
             viewModel.themes.observe(viewLifecycleOwner) {
                 if (it == null) {
                     // fetch data
-                    viewModel.fetchThemes()
+                    viewModel.fetchThemes(context = requireContext())
                 } else {
                     // setup data
                     setup(themes = it)
@@ -75,7 +75,7 @@ class ThemesFragment : BaseFragment() {
     private fun setupThemesAdapters(themes: List<Theme>) {
         if (!::adapter.isInitialized) {
             adapter = ThemesAdapter(requireContext()) {
-                viewModel.setTheme(it)
+                viewModel.setTheme(context = requireContext(), it)
                 activity?.recreate()
             }
         }

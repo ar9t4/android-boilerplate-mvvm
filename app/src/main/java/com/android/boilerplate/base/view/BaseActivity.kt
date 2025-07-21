@@ -4,7 +4,6 @@ import android.annotation.SuppressLint
 import android.app.Dialog
 import android.content.Context
 import android.content.res.Configuration
-import android.graphics.Color
 import android.net.ConnectivityManager
 import android.net.Network
 import android.net.NetworkCapabilities
@@ -15,9 +14,10 @@ import android.view.Window
 import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
 import android.widget.Toast
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
-import androidx.core.content.ContextCompat
+import androidx.core.view.ViewCompat
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
@@ -30,7 +30,7 @@ import com.google.android.material.snackbar.Snackbar
 import retrofit2.HttpException
 import java.net.SocketTimeoutException
 import java.net.UnknownHostException
-import java.util.*
+import java.util.Locale
 import java.util.concurrent.TimeoutException
 
 /**
@@ -39,7 +39,6 @@ import java.util.concurrent.TimeoutException
 @SuppressLint("Registered")
 abstract class BaseActivity : AppCompatActivity(), BaseView {
 
-    private var statusBarColor: Int = Color.WHITE
     private lateinit var dialog: Dialog
     private var availableNetwork: Network? = null
     private var originalSoftInputMode: Int? = null
@@ -103,26 +102,31 @@ abstract class BaseActivity : AppCompatActivity(), BaseView {
             }
         }
         registerNetworkCallback()
+        // apply edge to edge insets
+        applyEdgeToEdge()
+    }
+
+    private fun applyEdgeToEdge() {
+        enableEdgeToEdge()
+        applyInsetsPadding()
+    }
+
+    private fun applyInsetsPadding() {
+        ViewCompat.setOnApplyWindowInsetsListener(window.decorView.rootView) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            val cutoutInsets = insets.getInsets(WindowInsetsCompat.Type.displayCutout())
+            val left = maxOf(systemBars.left, cutoutInsets.left)
+            val top = maxOf(systemBars.top, cutoutInsets.top)
+            val right = maxOf(systemBars.right, cutoutInsets.right)
+            val bottom = maxOf(systemBars.bottom, cutoutInsets.bottom)
+            v.setPadding(left, top, right, bottom)
+            WindowInsetsCompat.CONSUMED
+        }
     }
 
     override fun onDestroy() {
         unregisterNetworkCallback()
         super.onDestroy()
-    }
-
-    /**
-     * Change Status Bar color
-     */
-    override fun changeStatusBarColor(color: Int) {
-        statusBarColor = window.statusBarColor
-        window.statusBarColor = ContextCompat.getColor(this, color)
-    }
-
-    /**
-     * Reset Status Bar color
-     */
-    override fun resetStatusBarColor() {
-        window.statusBarColor = statusBarColor
     }
 
     /**

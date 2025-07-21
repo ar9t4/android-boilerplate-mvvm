@@ -61,6 +61,5 @@ data class User(
 
 @Parcelize
 enum class UserType(val value: String) : Parcelable {
-    User("user"),
-    Mechanic("mechanic")
+    User("user")
 }

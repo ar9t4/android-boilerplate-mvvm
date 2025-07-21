@@ -1,19 +1,19 @@
 package com.android.boilerplate.model.repository.feedback
 
-import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.LiveData
 
 /**
  * @author Abdul Rahman
  */
 interface FeedbackRepository {
 
-    fun getImproveDesign(): MutableLiveData<Boolean>
+    fun getImproveDesign(): LiveData<Boolean>
 
-    fun getImproveExperience(): MutableLiveData<Boolean>
+    fun getImproveExperience(): LiveData<Boolean>
 
-    fun getImproveFunctionality(): MutableLiveData<Boolean>
+    fun getImproveFunctionality(): LiveData<Boolean>
 
-    fun getImprovePerformance(): MutableLiveData<Boolean>
+    fun getImprovePerformance(): LiveData<Boolean>
 
     fun setImproveDesign(value: Boolean)
 

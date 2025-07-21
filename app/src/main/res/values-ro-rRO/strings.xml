@@ -49,4 +49,13 @@
     <string name="n_p_message">Aplicația necesită Notificări Permisiune pentru a posta notificări pe acest dispozitiv.</string>
     <string name="n_p_not_granted">Permisiunea de notificări nu a fost acordată</string>
     <string name="open_app_settings">Deschideți Setările aplicației</string>
+    <string name="themes">Teme</string>
+    <string name="choose_language">Alegeți limba</string>
+    <string name="choose_theme">Alegeți tema</string>
+    <string name="next">Înainte</string>
+    <string name="str_continue">Continuați</string>
+    <string name="great">Excelent!</string>
+    <string name="you_are_all_set">Sunteți gata să utilizați aplicația.</string>
+    <string name="language_selection_done">Selectarea limbii este finalizată</string>
+    <string name="theme_selection_done">Selectarea temei este finalizată</string>
 </resources>

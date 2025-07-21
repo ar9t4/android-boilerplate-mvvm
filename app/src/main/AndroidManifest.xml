@@ -18,6 +18,7 @@
     <application
         android:name=".Application"
         android:allowBackup="false"
+        android:enableOnBackInvokedCallback="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:networkSecurityConfig="@xml/network_security_config"
@@ -26,13 +27,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="DataExtractionRules"
-        tools:targetApi="n">
+        tools:targetApi="33">
         <activity
             android:name=".view.splash.SplashActivity"
             android:exported="true"
-            android:screenOrientation="portrait"
-            android:theme="@style/SplashTheme"
-            tools:ignore="LockedOrientationActivity">
+            android:hardwareAccelerated="true"
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -42,13 +42,16 @@
         <activity
             android:name=".view.main.MainActivity"
             android:exported="false"
-            android:screenOrientation="portrait"
-            tools:ignore="LockedOrientationActivity" />
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".view.setup.SetupActivity"
+            android:exported="false"
+            android:hardwareAccelerated="true" />
         <activity
             android:name=".view.location.LocationActivity"
             android:exported="false"
-            android:screenOrientation="portrait"
-            tools:ignore="LockedOrientationActivity" />
+            android:hardwareAccelerated="true" />
+
         <receiver
             android:name=".aide.receivers.OtpBroadcastReceiver"
             android:exported="true"

@@ -31,7 +31,9 @@ object ImageUtils {
             .apply(if (circle) RequestOptions().circleCrop() else RequestOptions().centerCrop())
             .listener(object : RequestListener<Drawable> {
                 override fun onLoadFailed(
-                    e: GlideException?, model: Any?, target: Target<Drawable>?,
+                    e: GlideException?,
+                    model: Any?,
+                    target: Target<Drawable>,
                     isFirstResource: Boolean
                 ): Boolean {
                     onLoadFailed?.invoke()
@@ -39,8 +41,11 @@ object ImageUtils {
                 }
 
                 override fun onResourceReady(
-                    resource: Drawable?, model: Any?, target: Target<Drawable>?,
-                    dataSource: DataSource?, isFirstResource: Boolean
+                    resource: Drawable,
+                    model: Any,
+                    target: Target<Drawable>?,
+                    dataSource: DataSource,
+                    isFirstResource: Boolean
                 ): Boolean {
                     onResourceReady?.invoke()
                     return false

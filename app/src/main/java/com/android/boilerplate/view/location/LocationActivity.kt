@@ -83,12 +83,10 @@ class LocationActivity : BaseActivity() {
 
     private val locationPermissionRequest =
         registerForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) {
-            it?.let {
-                if (!it.values.contains(false)) {
-                    satisfyLocationSettings()
-                } else {
-                    showToast(getString(R.string.l_p_not_granted))
-                }
+            if (!it.values.contains(false)) {
+                satisfyLocationSettings()
+            } else {
+                showToast(getString(R.string.l_p_not_granted))
             }
         }
 
@@ -132,13 +130,11 @@ class LocationActivity : BaseActivity() {
     private val locationResolutionRequest = registerForActivityResult(
         ActivityResultContracts.StartIntentSenderForResult()
     ) {
-        it?.let {
-            if (it.resultCode == Activity.RESULT_OK) {
-                Log.i(TAG, "location settings satisfied")
-                locationManager.startLocationUpdates()
-            } else {
-                Log.i(TAG, "location settings not satisfied")
-            }
+        if (it.resultCode == Activity.RESULT_OK) {
+            Log.i(TAG, "location settings satisfied")
+            locationManager.startLocationUpdates()
+        } else {
+            Log.i(TAG, "location settings not satisfied")
         }
     }
 

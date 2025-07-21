@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:background="@color/white_FFFFFF_black_141718">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottie_animation_view"
+                android:layout_width="@dimen/sdp_120"
+                android:layout_height="@dimen/sdp_120"
+                android:layout_marginTop="@dimen/sdp_13"
+                android:contentDescription="@string/you_are_all_set"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="false"
+                app:lottie_rawRes="@raw/tick_done"
+                tools:ignore="ImageContrastCheck" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_title"
+                style="@style/tv_poppins_medium_21_black_000000_white_FFFFFF"
+                android:gravity="center"
+                android:text="@string/great"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lottie_animation_view" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_desc"
+                style="@style/tv_poppins_regular_11_black_1D1D1D_white_FFFFFF"
+                android:layout_width="0dp"
+                android:layout_marginHorizontal="@dimen/sdp_19"
+                android:layout_marginTop="@dimen/sdp_6"
+                android:gravity="center"
+                android:text="@string/you_are_all_set"
+                android:textSize="@dimen/ssp_13"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_language_check"
+                android:layout_width="@dimen/sdp_20"
+                android:layout_height="@dimen/sdp_20"
+                android:layout_marginStart="@dimen/sdp_19"
+                android:layout_marginTop="@dimen/sdp_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_desc"
+                app:srcCompat="@drawable/ic_selected"
+                tools:ignore="ImageContrastCheck" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_language_selection"
+                style="@style/tv_poppins_regular_11_black_1D1D1D_white_FFFFFF"
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/sdp_9"
+                android:layout_marginEnd="@dimen/sdp_19"
+                android:text="@string/language_selection_done"
+                app:layout_constraintBottom_toBottomOf="@id/iv_language_check"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/iv_language_check"
+                app:layout_constraintTop_toTopOf="@id/iv_language_check" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_theme_check"
+                android:layout_width="@dimen/sdp_20"
+                android:layout_height="@dimen/sdp_20"
+                android:layout_marginStart="@dimen/sdp_19"
+                android:layout_marginTop="@dimen/sdp_13"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_language_check"
+                app:srcCompat="@drawable/ic_selected"
+                tools:ignore="ImageContrastCheck" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_theme_selection"
+                style="@style/tv_poppins_regular_11_black_1D1D1D_white_FFFFFF"
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/sdp_9"
+                android:layout_marginEnd="@dimen/sdp_19"
+                android:text="@string/theme_selection_done"
+                app:layout_constraintBottom_toBottomOf="@id/iv_theme_check"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/iv_theme_check"
+                app:layout_constraintTop_toTopOf="@id/iv_theme_check" />
+
+            <FrameLayout
+                android:id="@+id/ad_container"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/sdp_12"
+                android:layout_marginTop="@dimen/sdp_19"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_theme_check" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</layout>

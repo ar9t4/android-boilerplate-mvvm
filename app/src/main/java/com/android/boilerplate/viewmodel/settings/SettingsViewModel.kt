@@ -1,5 +1,6 @@
 package com.android.boilerplate.viewmodel.settings
 
+import android.content.Context
 import androidx.lifecycle.viewModelScope
 import com.android.boilerplate.base.viewmodel.BaseViewModel
 import com.android.boilerplate.model.data.aide.Language
@@ -19,11 +20,11 @@ class SettingsViewModel @Inject constructor(private val repository: SettingsRepo
 
     val settingItems = repository.getSettingItems()
 
-    fun fetchSettingItems() {
+    fun fetchSettingItems(context: Context) {
         viewModelScope.launch(Dispatchers.IO) {
             try {
                 showLoader(show = false)
-                repository.fetchSettingItems()
+                repository.fetchSettingItems(context = context)
                 showLoader(show = false)
             } catch (exception: Exception) {
                 handleException(exception)
@@ -31,15 +32,15 @@ class SettingsViewModel @Inject constructor(private val repository: SettingsRepo
         }
     }
 
-    fun toggleNotification() = repository.toggleNotification()
+    fun toggleNotification(context: Context) = repository.toggleNotification(context = context)
 
     val themes = repository.getThemes()
 
-    fun fetchThemes() {
+    fun fetchThemes(context: Context) {
         viewModelScope.launch(Dispatchers.IO) {
             try {
                 showLoader(show = false)
-                repository.fetchThemes()
+                repository.fetchThemes(context = context)
                 showLoader(show = false)
             } catch (exception: Exception) {
                 handleException(exception)
@@ -47,13 +48,13 @@ class SettingsViewModel @Inject constructor(private val repository: SettingsRepo
         }
     }
 
-    fun updateSelectedTheme() = repository.updateSelectedTheme()
+    fun updateSelectedTheme(context: Context) = repository.updateSelectedTheme(context = context)
 
-    fun setTheme(selectedTheme: Theme) {
+    fun setTheme(context: Context, selectedTheme: Theme) {
         viewModelScope.launch(Dispatchers.IO) {
             try {
                 showLoader(show = false)
-                repository.setTheme(selectedTheme = selectedTheme)
+                repository.setTheme(context = context, selectedTheme = selectedTheme)
                 showLoader(show = false)
             } catch (exception: Exception) {
                 handleException(exception)
@@ -63,11 +64,11 @@ class SettingsViewModel @Inject constructor(private val repository: SettingsRepo
 
     val languages = repository.getLanguages()
 
-    fun fetchLanguages() {
+    fun fetchLanguages(context: Context) {
         viewModelScope.launch(Dispatchers.IO) {
             try {
                 showLoader(show = false)
-                repository.fetchLanguages()
+                repository.fetchLanguages(context = context)
                 showLoader(show = false)
             } catch (exception: Exception) {
                 handleException(exception)
@@ -75,13 +76,13 @@ class SettingsViewModel @Inject constructor(private val repository: SettingsRepo
         }
     }
 
-    fun updateSelectedLanguage() = repository.updateSelectedLanguage()
+    fun updateSelectedLanguage(context: Context) = repository.updateSelectedLanguage(context)
 
-    fun setLanguage(selectedLanguage: Language) {
+    fun setLanguage(context: Context, selectedLanguage: Language) {
         viewModelScope.launch(Dispatchers.IO) {
             try {
                 showLoader(show = false)
-                repository.setLanguage(selectedLanguage = selectedLanguage)
+                repository.setLanguage(context = context, selectedLanguage = selectedLanguage)
                 showLoader(show = false)
             } catch (exception: Exception) {
                 handleException(exception)

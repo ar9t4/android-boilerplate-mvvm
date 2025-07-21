@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_setup"
+    app:startDestination="@id/dest_languages">
+
+    <fragment
+        android:id="@+id/dest_languages"
+        android:name="com.android.boilerplate.view.settings.language.LanguagesFragment"
+        android:label="@string/languages"
+        tools:layout="@layout/fragment_languages" />
+    <fragment
+        android:id="@+id/dest_themes"
+        android:name="com.android.boilerplate.view.settings.theme.ThemesFragment"
+        android:label="@string/themes"
+        tools:layout="@layout/fragment_themes" />
+    <fragment
+        android:id="@+id/dest_readyToUse"
+        android:name="com.android.boilerplate.view.setup.ReadyToUseFragment"
+        android:label="@string/you_are_all_set"
+        tools:layout="@layout/fragment_ready_to_use" />
+</navigation>

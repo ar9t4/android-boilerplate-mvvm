@@ -27,14 +27,6 @@ abstract class BaseBottomSheetDialogFragment : BottomSheetDialogFragment(), Base
         hideKeyboard()
     }
 
-    override fun changeStatusBarColor(color: Int) {
-        activity?.changeStatusBarColor(color)
-    }
-
-    override fun resetStatusBarColor() {
-        activity?.resetStatusBarColor()
-    }
-
     override fun hideSystemBars(hide: Boolean, window: Window?, view: View?) {
         activity?.hideSystemBars(hide, window, view)
     }

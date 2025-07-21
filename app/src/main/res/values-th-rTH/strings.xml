@@ -49,4 +49,13 @@
     <string name="n_p_message">แอปต้องได้รับอนุญาตจากการแจ้งเตือนจึงจะโพสต์การแจ้งเตือนบนอุปกรณ์นี้ได้</string>
     <string name="n_p_not_granted">ไม่ได้รับอนุญาตการแจ้งเตือน</string>
     <string name="open_app_settings">เปิดการตั้งค่าแอพ</string>
+    <string name="themes">ธีม</string>
+    <string name="choose_language">เลือกภาษา</string>
+    <string name="choose_theme">เลือกธีม</string>
+    <string name="next">ถัดไป</string>
+    <string name="str_continue">ดำเนินการต่อ</string>
+    <string name="great">เยี่ยมเลย!</string>
+    <string name="you_are_all_set">คุณพร้อมใช้แอปแล้ว</string>
+    <string name="language_selection_done">เลือกภาษาเรียบร้อยแล้ว</string>
+    <string name="theme_selection_done">เลือกธีมเรียบร้อยแล้ว</string>
 </resources>

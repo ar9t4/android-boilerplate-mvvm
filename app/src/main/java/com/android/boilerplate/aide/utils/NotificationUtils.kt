@@ -50,7 +50,7 @@ object NotificationUtils {
             .setLights(lightColor, 1000, 2000)
             .setVisibility(NotificationCompat.VISIBILITY_PUBLIC)
             .setPriority(NotificationCompat.PRIORITY_DEFAULT)
-            .setSmallIcon(R.drawable.ic_device_info)
+            .setSmallIcon(R.drawable.ic_logo)
             .setContentIntent(pendingIntent)
             .setContentTitle(title)
             .setContentText(text)

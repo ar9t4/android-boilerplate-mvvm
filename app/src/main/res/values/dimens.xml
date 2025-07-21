@@ -39,5 +39,6 @@
     <dimen name="sdp_40">@dimen/_40sdp</dimen>
     <dimen name="sdp_50">@dimen/_50sdp</dimen>
     <dimen name="sdp_96">@dimen/_96sdp</dimen>
+    <dimen name="sdp_120">@dimen/_120sdp</dimen>
 
 </resources>

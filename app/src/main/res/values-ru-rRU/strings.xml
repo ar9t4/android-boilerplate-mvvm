@@ -49,4 +49,13 @@
     <string name="n_p_message">Приложению требуется разрешение на уведомления, чтобы публиковать уведомления на этом устройстве.</string>
     <string name="n_p_not_granted">Разрешение на уведомления не предоставлено</string>
     <string name="open_app_settings">Откройте настройки приложения</string>
+    <string name="themes">Темы</string>
+    <string name="choose_language">Выбрать язык</string>
+    <string name="choose_theme">Выбрать тему</string>
+    <string name="next">Далее</string>
+    <string name="str_continue">Продолжить</string>
+    <string name="great">Отлично!</string>
+    <string name="you_are_all_set">Всё готово к использованию приложения.</string>
+    <string name="language_selection_done">Выбор языка завершён</string>
+    <string name="theme_selection_done">Выбор темы завершён</string>
 </resources>

@@ -1,12 +1,12 @@
 package com.android.boilerplate.view.more
 
 import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
 import android.os.Parcelable
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.net.toUri
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.viewModels
 import com.android.boilerplate.R
@@ -56,14 +56,13 @@ class MoreFragment : BaseFragment() {
         binding.apply {
             // observers on live data
             viewModel.moreItems.observe(viewLifecycleOwner) {
-                if (it == null) {
-                    // fetch data
-                    viewModel.fetchMoreItems()
-                } else {
+                if (!it.isNullOrEmpty()) {
                     // setup data
                     setup(moreItems = it)
                 }
             }
+            // fetch data
+            viewModel.fetchMoreItems(context = requireContext())
         }
     }
 
@@ -84,22 +83,28 @@ class MoreFragment : BaseFragment() {
                         1 -> {
                             onSettingsClicked()
                         }
+
                         2 -> {
                             onFeedbackClicked()
                         }
-                        4 -> {
+
+                        3 -> {
                             onPolicyClicked()
                         }
-                        5 -> {
+
+                        4 -> {
                             onShareClicked()
                         }
-                        6 -> {
+
+                        5 -> {
                             onRateUsClicked()
                         }
-                        7 -> {
+
+                        6 -> {
                             onMoreAppsClicked()
                         }
-                        8 -> {
+
+                        7 -> {
                             onVersionClicked()
                         }
                     }
@@ -158,7 +163,7 @@ class MoreFragment : BaseFragment() {
         context?.let {
             try {
                 val uriString = "market://details?id=${it.packageName}"
-                startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(uriString)))
+                startActivity(Intent(Intent.ACTION_VIEW, uriString.toUri()))
             } catch (e: Exception) {
                 val url = "http://play.google.com/store/apps/details?id=${it.packageName}"
                 BrowserUtils.openInAppBrowser(it, url)
@@ -170,7 +175,7 @@ class MoreFragment : BaseFragment() {
         context?.let {
             try {
                 val uriString = "market://search?q=pub:XYZ"
-                startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(uriString)))
+                startActivity(Intent(Intent.ACTION_VIEW, uriString.toUri()))
             } catch (e: Exception) {
                 val url = "http://play.google.com/store/search?q=pub:XYZ"
                 BrowserUtils.openInAppBrowser(it, url)

@@ -1,6 +1,7 @@
 package com.android.boilerplate.model.data.local.preference
 
 import android.content.Context
+import androidx.core.content.edit
 import com.android.boilerplate.R
 import com.android.boilerplate.model.data.remote.user.User
 import com.google.gson.Gson
@@ -19,13 +20,13 @@ class Preferences @Inject constructor(@ApplicationContext private val context: C
         context.getSharedPreferences(context.getString(R.string.app_name), Context.MODE_PRIVATE)
 
     fun clear() {
-        sharedPreferences.edit().clear().apply()
+        sharedPreferences.edit { clear() }
     }
 
     fun contains(key: String): Boolean = sharedPreferences.contains(key)
 
     fun setString(key: String, value: String?) {
-        sharedPreferences.edit().putString(key, value).apply()
+        sharedPreferences.edit { putString(key, value) }
     }
 
     fun getString(key: String): String? {
@@ -33,7 +34,7 @@ class Preferences @Inject constructor(@ApplicationContext private val context: C
     }
 
     fun setInt(key: String, value: Int) {
-        sharedPreferences.edit().putInt(key, value).apply()
+        sharedPreferences.edit { putInt(key, value) }
     }
 
     fun getInt(key: String): Int {
@@ -41,7 +42,7 @@ class Preferences @Inject constructor(@ApplicationContext private val context: C
     }
 
     fun setBoolean(key: String, value: Boolean) {
-        sharedPreferences.edit().putBoolean(key, value).apply()
+        sharedPreferences.edit { putBoolean(key, value) }
     }
 
     fun getBoolean(key: String): Boolean {
@@ -49,7 +50,7 @@ class Preferences @Inject constructor(@ApplicationContext private val context: C
     }
 
     fun setFloat(key: String, value: Float) {
-        sharedPreferences.edit().putFloat(key, value).apply()
+        sharedPreferences.edit { putFloat(key, value) }
     }
 
     fun getFloat(key: String): Float {
@@ -57,7 +58,7 @@ class Preferences @Inject constructor(@ApplicationContext private val context: C
     }
 
     fun setLong(key: String, value: Long) {
-        sharedPreferences.edit().putLong(key, value).apply()
+        sharedPreferences.edit { putLong(key, value) }
     }
 
     fun getLong(key: String): Long {
@@ -65,7 +66,7 @@ class Preferences @Inject constructor(@ApplicationContext private val context: C
     }
 
     fun setSignInUser(user: User) {
-        sharedPreferences.edit().putString("user", gson.toJson(user)).apply()
+        sharedPreferences.edit { putString("user", gson.toJson(user)) }
     }
 
     fun getSignInUser(): User? {
@@ -78,5 +79,6 @@ class Preferences @Inject constructor(@ApplicationContext private val context: C
         const val KEY_NOTIFICATION = "notification"
         const val KEY_THEME = "theme"
         const val KEY_LANG = "lang"
+        const val KEY_IS_APP_SETUP = "is_app_setup"
     }
 }

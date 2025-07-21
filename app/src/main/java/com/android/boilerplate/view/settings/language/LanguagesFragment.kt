@@ -55,7 +55,7 @@ class LanguagesFragment : BaseFragment() {
             viewModel.languages.observe(viewLifecycleOwner) {
                 if (it == null) {
                     // fetch data
-                    viewModel.fetchLanguages()
+                    viewModel.fetchLanguages(context = requireContext())
                 } else {
                     // setup data
                     setup(languages = it)
@@ -75,7 +75,7 @@ class LanguagesFragment : BaseFragment() {
     private fun setupLanguagesAdapters(languages: List<Language>) {
         if (!::adapter.isInitialized) {
             adapter = LanguagesAdapter(requireContext()) {
-                viewModel.setLanguage(it)
+                viewModel.setLanguage(context = requireContext(), it)
                 activity?.recreate()
             }
         }

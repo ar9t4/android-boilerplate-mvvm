@@ -49,4 +49,13 @@
     <string name="n_p_message">يحتاج التطبيق إلى إذن الإشعارات لنشر الإشعارات على هذا الجهاز.</string>
     <string name="n_p_not_granted">لم يتم منح إذن الإخطارات</string>
     <string name="open_app_settings">افتح إعدادات التطبيق</string>
+    <string name="themes">المواضيع</string>
+    <string name="choose_language">اختر اللغة</string>
+    <string name="choose_theme">اختر المظهر</string>
+    <string name="next">التالي</string>
+    <string name="str_continue">متابعة</string>
+    <string name="great">رائع!</string>
+    <string name="you_are_all_set">أنت جاهز الآن لاستخدام التطبيق.</string>
+    <string name="language_selection_done">تم اختيار اللغة</string>
+    <string name="theme_selection_done">تم اختيار المظهر</string>
 </resources>

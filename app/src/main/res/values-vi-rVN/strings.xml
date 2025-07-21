@@ -49,4 +49,13 @@
     <string name="n_p_message">Ứng dụng cần có Quyền thông báo để đăng thông báo trên thiết bị này.</string>
     <string name="n_p_not_granted">Quyền thông báo không được cấp</string>
     <string name="open_app_settings">Mở cài đặt ứng dụng</string>
+    <string name="themes">Chủ đề</string>
+    <string name="choose_language">Chọn Ngôn ngữ</string>
+    <string name="choose_theme">Chọn Chủ đề</string>
+    <string name="next">Tiếp theo</string>
+    <string name="str_continue">Tiếp tục</string>
+    <string name="great">Tuyệt vời!</string>
+    <string name="you_are_all_set">Bạn đã hoàn tất và sẵn sàng sử dụng ứng dụng.</string>
+    <string name="language_selection_done">Việc chọn ngôn ngữ đã hoàn tất</string>
+    <string name="theme_selection_done">Việc chọn chủ đề đã hoàn tất</string>
 </resources>

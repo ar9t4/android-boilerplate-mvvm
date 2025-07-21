@@ -49,4 +49,13 @@
     <string name="n_p_message">برنامه برای ارسال اعلان‌ها در این دستگاه به مجوز اعلان‌ها نیاز دارد.</string>
     <string name="n_p_not_granted">مجوز اعلان‌ها داده نشد</string>
     <string name="open_app_settings">تنظیمات برنامه را باز کنید</string>
+    <string name="themes">تم‌ها</string>
+    <string name="choose_language">انتخاب زبان</string>
+    <string name="choose_theme">انتخاب قالب</string>
+    <string name="next">بعدی</string>
+    <string name="str_continue">ادامه</string>
+    <string name="great">عالی!</string>
+    <string name="you_are_all_set">شما آماده استفاده از برنامه هستید.</string>
+    <string name="language_selection_done">انتخاب زبان انجام شد</string>
+    <string name="theme_selection_done">انتخاب قالب انجام شد</string>
 </resources>

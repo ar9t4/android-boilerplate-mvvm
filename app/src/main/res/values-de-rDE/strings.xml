@@ -49,4 +49,13 @@
     <string name="n_p_message">Die App benötigt die Benachrichtigungsberechtigung, um Benachrichtigungen auf diesem Gerät zu veröffentlichen.</string>
     <string name="n_p_not_granted">Die Berechtigung für Benachrichtigungen wurde nicht erteilt</string>
     <string name="open_app_settings">Öffnen Sie die App-Einstellungen</string>
+    <string name="themes">Themen</string>
+    <string name="choose_language">Sprache auswählen</string>
+    <string name="choose_theme">Design auswählen</string>
+    <string name="next">Weiter</string>
+    <string name="str_continue">Weiter</string>
+    <string name="great">Super!</string>
+    <string name="you_are_all_set">Sie sind fertig und können die App nutzen.</string>
+    <string name="language_selection_done">Sprachauswahl abgeschlossen</string>
+    <string name="theme_selection_done">Designauswahl abgeschlossen</string>
 </resources>

@@ -7,8 +7,6 @@ import android.view.Window
 import android.widget.EditText
 import androidx.activity.OnBackPressedCallback
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
-import androidx.lifecycle.observe
 import com.android.boilerplate.base.model.data.remote.response.Result
 import com.android.boilerplate.base.viewmodel.BaseViewModel
 
@@ -32,27 +30,21 @@ abstract class BaseFragment : Fragment(), BaseView {
         super.onViewCreated(view, savedInstanceState)
         hideKeyboard()
         getViewModel()?.let { viewModel ->
-            viewModel.event.observe(this, Observer<Any> {
+            viewModel.event.observe(viewLifecycleOwner) {
                 when (it) {
                     is Result.Loading<*> -> {
                         loaderVisibility(visibility = it.loading as Boolean)
                     }
+
                     is Result.Failure<*> -> {
                         loaderVisibility(visibility = false)
                         takeActionOnError(exception = it.exception as Exception)
                     }
+
                     else -> {}
                 }
-            })
+            }
         }
-    }
-
-    override fun changeStatusBarColor(color: Int) {
-        activity?.changeStatusBarColor(color)
-    }
-
-    override fun resetStatusBarColor() {
-        activity?.resetStatusBarColor()
     }
 
     override fun hideSystemBars(hide: Boolean, window: Window?, view: View?) {

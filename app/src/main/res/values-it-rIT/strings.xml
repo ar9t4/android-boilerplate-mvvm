@@ -49,4 +49,13 @@
     <string name="n_p_message">L\'app necessita dell\'autorizzazione Notifiche per pubblicare notifiche su questo dispositivo.</string>
     <string name="n_p_not_granted">Autorizzazione notifiche non concessa</string>
     <string name="open_app_settings">Apri Impostazioni app</string>
+    <string name="themes">Temi</string>
+    <string name="choose_language">Scegli lingua</string>
+    <string name="choose_theme">Scegli tema</string>
+    <string name="next">Avanti</string>
+    <string name="str_continue">Continua</string>
+    <string name="great">Ottimo!</string>
+    <string name="you_are_all_set">Ora sei pronto per usare l\'app.</string>
+    <string name="language_selection_done">Selezione della lingua completata</string>
+    <string name="theme_selection_done">Selezione del tema completata</string>
 </resources>

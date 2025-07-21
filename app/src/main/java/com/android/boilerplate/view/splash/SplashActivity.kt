@@ -1,24 +1,27 @@
 package com.android.boilerplate.view.splash
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
-import androidx.lifecycle.Lifecycle
+import androidx.databinding.DataBindingUtil
 import com.android.boilerplate.R
 import com.android.boilerplate.aide.workers.PeriodicWorkerUtils
 import com.android.boilerplate.base.view.BaseActivity
 import com.android.boilerplate.base.viewmodel.BaseViewModel
+import com.android.boilerplate.databinding.ActivitySplashBinding
 import com.android.boilerplate.model.data.local.preference.Preferences
 import com.android.boilerplate.view.main.MainActivity
+import com.android.boilerplate.view.setup.SetupActivity
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
+@SuppressLint("CustomSplashScreen")
 @AndroidEntryPoint
 class SplashActivity : BaseActivity() {
 
     @Inject
     lateinit var preferences: Preferences
+    private lateinit var binding: ActivitySplashBinding
 
     override fun getViewModel(): BaseViewModel? = null
 
@@ -26,18 +29,15 @@ class SplashActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_splash)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_splash)
     }
 
     override fun onResume() {
         super.onResume()
-        Handler(Looper.getMainLooper()).postDelayed({
-            if (lifecycle.currentState.isAtLeast(Lifecycle.State.RESUMED)) {
-                setDefaultPreferences()
-                startActivity(Intent(this, MainActivity::class.java))
-                finish()
-            }
-        }, 2000)
+        // set default settings preferences
+        setDefaultPreferences()
+        // launch setup or main activity
+        launchNextActivity()
     }
 
     private fun setDefaultPreferences() {
@@ -45,5 +45,14 @@ class SplashActivity : BaseActivity() {
             preferences.setBoolean(Preferences.KEY_NOTIFICATION, true)
             PeriodicWorkerUtils.createPeriodicWorker(applicationContext)
         }
+    }
+
+    private fun launchNextActivity() {
+        if (!preferences.contains(Preferences.KEY_IS_APP_SETUP)) {
+            startActivity(Intent(this@SplashActivity, SetupActivity::class.java))
+        } else {
+            startActivity(Intent(this@SplashActivity, MainActivity::class.java))
+        }
+        finish()
     }
 }

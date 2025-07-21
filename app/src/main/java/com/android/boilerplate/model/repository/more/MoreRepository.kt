@@ -1,5 +1,6 @@
 package com.android.boilerplate.model.repository.more
 
+import android.content.Context
 import androidx.lifecycle.LiveData
 import com.android.boilerplate.model.data.aide.MoreItem
 
@@ -8,5 +9,5 @@ import com.android.boilerplate.model.data.aide.MoreItem
  */
 interface MoreRepository {
     fun getMoreItems(): LiveData<List<MoreItem>?>
-    suspend fun fetchMoreItems()
+    suspend fun fetchMoreItems(context: Context)
 }

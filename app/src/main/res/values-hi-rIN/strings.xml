@@ -49,4 +49,13 @@
     <string name="n_p_message">ऐप को इस डिवाइस पर सूचनाएं पोस्ट करने के लिए अधिसूचना अनुमति की आवश्यकता है।</string>
     <string name="n_p_not_granted">अधिसूचना की अनुमति नहीं दी गई</string>
     <string name="open_app_settings">ऐप सेटिंग खोलें</string>
+    <string name="themes">विषय-वस्तु</string>
+    <string name="choose_language">भाषा चुनें</string>
+    <string name="choose_theme">थीम चुनें</string>
+    <string name="next">अगला</string>
+    <string name="str_continue">जारी रखें</string>
+    <string name="great">वाह!</string>
+    <string name="you_are_all_set">आप ऐप इस्तेमाल करने के लिए पूरी तरह तैयार हैं।</string>
+    <string name="language_selection_done">भाषा का चयन हो गया है</string>
+    <string name="theme_selection_done">थीम का चयन हो गया है</string>
 </resources>

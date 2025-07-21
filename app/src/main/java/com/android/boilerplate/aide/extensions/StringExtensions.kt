@@ -2,7 +2,7 @@ package com.android.boilerplate.aide.extensions
 
 import android.util.Log
 import android.webkit.URLUtil
-import java.util.*
+import java.util.Locale
 
 /**
  * @author Abdul Rahman
